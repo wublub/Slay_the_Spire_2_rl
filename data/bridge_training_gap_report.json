@@ -1,0 +1,652 @@
+{
+  "decompiled_root": "D:\\Slay the Spire 2 v0.101.0\\Slay_the_Spire_2_rl-main\\decompiled",
+  "card_effects_path": "D:\\Slay the Spire 2 v0.101.0\\Slay_the_Spire_2_rl-main\\sts_env\\card_effects.py",
+  "summary": {
+    "selection_cards_total": 39,
+    "high_risk_cards": 0,
+    "medium_risk_cards": 15,
+    "low_risk_cards": 24,
+    "missing_explicit_handler": 14,
+    "custom_handler_but_simplified": 1,
+    "custom_handler_present": 24,
+    "mechanics": {
+      "choose_a_card_screen": 3,
+      "combat_hand_discard": 5,
+      "combat_hand_exhaust": 4,
+      "combat_hand_select": 13,
+      "combat_hand_transform": 1,
+      "combat_hand_upgrade": 1,
+      "grid_discard_pile": 5,
+      "grid_draw_pile": 7
+    }
+  },
+  "high_risk_examples": [],
+  "entries": [
+    {
+      "card_id": "Acrobatics",
+      "mechanics": [
+        "combat_hand_discard"
+      ],
+      "hand_selection_mechanics": [
+        "combat_hand_discard"
+      ],
+      "other_selection_mechanics": [],
+      "env_status": "custom_handler_present",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\Acrobatics.cs",
+      "bridge_can_tighten_mask": true,
+      "bridge_observation_gap": true,
+      "risk": "low"
+    },
+    {
+      "card_id": "Armaments",
+      "mechanics": [
+        "combat_hand_upgrade"
+      ],
+      "hand_selection_mechanics": [
+        "combat_hand_upgrade"
+      ],
+      "other_selection_mechanics": [],
+      "env_status": "custom_handler_present",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\Armaments.cs",
+      "bridge_can_tighten_mask": true,
+      "bridge_observation_gap": true,
+      "risk": "low"
+    },
+    {
+      "card_id": "Begone",
+      "mechanics": [
+        "combat_hand_transform"
+      ],
+      "hand_selection_mechanics": [
+        "combat_hand_transform"
+      ],
+      "other_selection_mechanics": [],
+      "env_status": "custom_handler_present",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\Begone.cs",
+      "bridge_can_tighten_mask": true,
+      "bridge_observation_gap": true,
+      "risk": "low"
+    },
+    {
+      "card_id": "Brand",
+      "mechanics": [
+        "combat_hand_exhaust"
+      ],
+      "hand_selection_mechanics": [
+        "combat_hand_exhaust"
+      ],
+      "other_selection_mechanics": [],
+      "env_status": "custom_handler_present",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\Brand.cs",
+      "bridge_can_tighten_mask": true,
+      "bridge_observation_gap": true,
+      "risk": "low"
+    },
+    {
+      "card_id": "BurningPact",
+      "mechanics": [
+        "combat_hand_exhaust"
+      ],
+      "hand_selection_mechanics": [
+        "combat_hand_exhaust"
+      ],
+      "other_selection_mechanics": [],
+      "env_status": "custom_handler_present",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\BurningPact.cs",
+      "bridge_can_tighten_mask": true,
+      "bridge_observation_gap": true,
+      "risk": "low"
+    },
+    {
+      "card_id": "Charge",
+      "mechanics": [
+        "grid_draw_pile"
+      ],
+      "hand_selection_mechanics": [],
+      "other_selection_mechanics": [
+        "grid_draw_pile"
+      ],
+      "env_status": "missing_explicit_handler",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\Charge.cs",
+      "bridge_can_tighten_mask": false,
+      "bridge_observation_gap": false,
+      "risk": "medium"
+    },
+    {
+      "card_id": "Cleanse",
+      "mechanics": [
+        "grid_draw_pile"
+      ],
+      "hand_selection_mechanics": [],
+      "other_selection_mechanics": [
+        "grid_draw_pile"
+      ],
+      "env_status": "missing_explicit_handler",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\Cleanse.cs",
+      "bridge_can_tighten_mask": false,
+      "bridge_observation_gap": false,
+      "risk": "medium"
+    },
+    {
+      "card_id": "CosmicIndifference",
+      "mechanics": [
+        "grid_discard_pile"
+      ],
+      "hand_selection_mechanics": [],
+      "other_selection_mechanics": [
+        "grid_discard_pile"
+      ],
+      "env_status": "missing_explicit_handler",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\CosmicIndifference.cs",
+      "bridge_can_tighten_mask": false,
+      "bridge_observation_gap": false,
+      "risk": "medium"
+    },
+    {
+      "card_id": "DaggerThrow",
+      "mechanics": [
+        "combat_hand_discard"
+      ],
+      "hand_selection_mechanics": [
+        "combat_hand_discard"
+      ],
+      "other_selection_mechanics": [],
+      "env_status": "custom_handler_present",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\DaggerThrow.cs",
+      "bridge_can_tighten_mask": true,
+      "bridge_observation_gap": true,
+      "risk": "low"
+    },
+    {
+      "card_id": "DecisionsDecisions",
+      "mechanics": [
+        "combat_hand_select"
+      ],
+      "hand_selection_mechanics": [
+        "combat_hand_select"
+      ],
+      "other_selection_mechanics": [],
+      "env_status": "custom_handler_present",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\DecisionsDecisions.cs",
+      "bridge_can_tighten_mask": true,
+      "bridge_observation_gap": true,
+      "risk": "low"
+    },
+    {
+      "card_id": "Discovery",
+      "mechanics": [
+        "choose_a_card_screen"
+      ],
+      "hand_selection_mechanics": [],
+      "other_selection_mechanics": [
+        "choose_a_card_screen"
+      ],
+      "env_status": "missing_explicit_handler",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\Discovery.cs",
+      "bridge_can_tighten_mask": false,
+      "bridge_observation_gap": false,
+      "risk": "medium"
+    },
+    {
+      "card_id": "Dredge",
+      "mechanics": [
+        "grid_discard_pile"
+      ],
+      "hand_selection_mechanics": [],
+      "other_selection_mechanics": [
+        "grid_discard_pile"
+      ],
+      "env_status": "missing_explicit_handler",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\Dredge.cs",
+      "bridge_can_tighten_mask": false,
+      "bridge_observation_gap": false,
+      "risk": "medium"
+    },
+    {
+      "card_id": "DualWield",
+      "mechanics": [
+        "combat_hand_select"
+      ],
+      "hand_selection_mechanics": [
+        "combat_hand_select"
+      ],
+      "other_selection_mechanics": [],
+      "env_status": "custom_handler_present",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\DualWield.cs",
+      "bridge_can_tighten_mask": true,
+      "bridge_observation_gap": true,
+      "risk": "low"
+    },
+    {
+      "card_id": "Glimmer",
+      "mechanics": [
+        "combat_hand_select"
+      ],
+      "hand_selection_mechanics": [
+        "combat_hand_select"
+      ],
+      "other_selection_mechanics": [],
+      "env_status": "custom_handler_present",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\Glimmer.cs",
+      "bridge_can_tighten_mask": true,
+      "bridge_observation_gap": true,
+      "risk": "low"
+    },
+    {
+      "card_id": "Graveblast",
+      "mechanics": [
+        "grid_discard_pile"
+      ],
+      "hand_selection_mechanics": [],
+      "other_selection_mechanics": [
+        "grid_discard_pile"
+      ],
+      "env_status": "missing_explicit_handler",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\Graveblast.cs",
+      "bridge_can_tighten_mask": false,
+      "bridge_observation_gap": false,
+      "risk": "medium"
+    },
+    {
+      "card_id": "Guards",
+      "mechanics": [
+        "combat_hand_select"
+      ],
+      "hand_selection_mechanics": [
+        "combat_hand_select"
+      ],
+      "other_selection_mechanics": [],
+      "env_status": "custom_handler_present",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\Guards.cs",
+      "bridge_can_tighten_mask": true,
+      "bridge_observation_gap": true,
+      "risk": "low"
+    },
+    {
+      "card_id": "HandTrick",
+      "mechanics": [
+        "combat_hand_select"
+      ],
+      "hand_selection_mechanics": [
+        "combat_hand_select"
+      ],
+      "other_selection_mechanics": [],
+      "env_status": "custom_handler_present",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\HandTrick.cs",
+      "bridge_can_tighten_mask": true,
+      "bridge_observation_gap": true,
+      "risk": "low"
+    },
+    {
+      "card_id": "Headbutt",
+      "mechanics": [
+        "grid_discard_pile"
+      ],
+      "hand_selection_mechanics": [],
+      "other_selection_mechanics": [
+        "grid_discard_pile"
+      ],
+      "env_status": "custom_handler_but_simplified",
+      "env_notes": [
+        "handler_contains_simplification_comment"
+      ],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\Headbutt.cs",
+      "bridge_can_tighten_mask": false,
+      "bridge_observation_gap": false,
+      "risk": "medium"
+    },
+    {
+      "card_id": "HeirloomHammer",
+      "mechanics": [
+        "combat_hand_select"
+      ],
+      "hand_selection_mechanics": [
+        "combat_hand_select"
+      ],
+      "other_selection_mechanics": [],
+      "env_status": "custom_handler_present",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\HeirloomHammer.cs",
+      "bridge_can_tighten_mask": true,
+      "bridge_observation_gap": true,
+      "risk": "low"
+    },
+    {
+      "card_id": "HiddenDaggers",
+      "mechanics": [
+        "combat_hand_discard"
+      ],
+      "hand_selection_mechanics": [
+        "combat_hand_discard"
+      ],
+      "other_selection_mechanics": [],
+      "env_status": "custom_handler_present",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\HiddenDaggers.cs",
+      "bridge_can_tighten_mask": true,
+      "bridge_observation_gap": true,
+      "risk": "low"
+    },
+    {
+      "card_id": "Hologram",
+      "mechanics": [
+        "grid_discard_pile"
+      ],
+      "hand_selection_mechanics": [],
+      "other_selection_mechanics": [
+        "grid_discard_pile"
+      ],
+      "env_status": "missing_explicit_handler",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\Hologram.cs",
+      "bridge_can_tighten_mask": false,
+      "bridge_observation_gap": false,
+      "risk": "medium"
+    },
+    {
+      "card_id": "Nightmare",
+      "mechanics": [
+        "combat_hand_select"
+      ],
+      "hand_selection_mechanics": [
+        "combat_hand_select"
+      ],
+      "other_selection_mechanics": [],
+      "env_status": "custom_handler_present",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\Nightmare.cs",
+      "bridge_can_tighten_mask": true,
+      "bridge_observation_gap": true,
+      "risk": "low"
+    },
+    {
+      "card_id": "PhotonCut",
+      "mechanics": [
+        "combat_hand_select"
+      ],
+      "hand_selection_mechanics": [
+        "combat_hand_select"
+      ],
+      "other_selection_mechanics": [],
+      "env_status": "custom_handler_present",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\PhotonCut.cs",
+      "bridge_can_tighten_mask": true,
+      "bridge_observation_gap": true,
+      "risk": "low"
+    },
+    {
+      "card_id": "Prepared",
+      "mechanics": [
+        "combat_hand_discard"
+      ],
+      "hand_selection_mechanics": [
+        "combat_hand_discard"
+      ],
+      "other_selection_mechanics": [],
+      "env_status": "custom_handler_present",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\Prepared.cs",
+      "bridge_can_tighten_mask": true,
+      "bridge_observation_gap": true,
+      "risk": "low"
+    },
+    {
+      "card_id": "Purity",
+      "mechanics": [
+        "combat_hand_select"
+      ],
+      "hand_selection_mechanics": [
+        "combat_hand_select"
+      ],
+      "other_selection_mechanics": [],
+      "env_status": "custom_handler_present",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\Purity.cs",
+      "bridge_can_tighten_mask": true,
+      "bridge_observation_gap": true,
+      "risk": "low"
+    },
+    {
+      "card_id": "Quasar",
+      "mechanics": [
+        "choose_a_card_screen"
+      ],
+      "hand_selection_mechanics": [],
+      "other_selection_mechanics": [
+        "choose_a_card_screen"
+      ],
+      "env_status": "missing_explicit_handler",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\Quasar.cs",
+      "bridge_can_tighten_mask": false,
+      "bridge_observation_gap": false,
+      "risk": "medium"
+    },
+    {
+      "card_id": "Scavenge",
+      "mechanics": [
+        "combat_hand_exhaust"
+      ],
+      "hand_selection_mechanics": [
+        "combat_hand_exhaust"
+      ],
+      "other_selection_mechanics": [],
+      "env_status": "custom_handler_present",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\Scavenge.cs",
+      "bridge_can_tighten_mask": true,
+      "bridge_observation_gap": true,
+      "risk": "low"
+    },
+    {
+      "card_id": "SculptingStrike",
+      "mechanics": [
+        "combat_hand_select"
+      ],
+      "hand_selection_mechanics": [
+        "combat_hand_select"
+      ],
+      "other_selection_mechanics": [],
+      "env_status": "custom_handler_present",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\SculptingStrike.cs",
+      "bridge_can_tighten_mask": true,
+      "bridge_observation_gap": true,
+      "risk": "low"
+    },
+    {
+      "card_id": "Seance",
+      "mechanics": [
+        "grid_draw_pile"
+      ],
+      "hand_selection_mechanics": [],
+      "other_selection_mechanics": [
+        "grid_draw_pile"
+      ],
+      "env_status": "missing_explicit_handler",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\Seance.cs",
+      "bridge_can_tighten_mask": false,
+      "bridge_observation_gap": false,
+      "risk": "medium"
+    },
+    {
+      "card_id": "SecretTechnique",
+      "mechanics": [
+        "grid_draw_pile"
+      ],
+      "hand_selection_mechanics": [],
+      "other_selection_mechanics": [
+        "grid_draw_pile"
+      ],
+      "env_status": "missing_explicit_handler",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\SecretTechnique.cs",
+      "bridge_can_tighten_mask": false,
+      "bridge_observation_gap": false,
+      "risk": "medium"
+    },
+    {
+      "card_id": "SecretWeapon",
+      "mechanics": [
+        "grid_draw_pile"
+      ],
+      "hand_selection_mechanics": [],
+      "other_selection_mechanics": [
+        "grid_draw_pile"
+      ],
+      "env_status": "missing_explicit_handler",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\SecretWeapon.cs",
+      "bridge_can_tighten_mask": false,
+      "bridge_observation_gap": false,
+      "risk": "medium"
+    },
+    {
+      "card_id": "SeekerStrike",
+      "mechanics": [
+        "grid_draw_pile"
+      ],
+      "hand_selection_mechanics": [],
+      "other_selection_mechanics": [
+        "grid_draw_pile"
+      ],
+      "env_status": "missing_explicit_handler",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\SeekerStrike.cs",
+      "bridge_can_tighten_mask": false,
+      "bridge_observation_gap": false,
+      "risk": "medium"
+    },
+    {
+      "card_id": "Snap",
+      "mechanics": [
+        "combat_hand_select"
+      ],
+      "hand_selection_mechanics": [
+        "combat_hand_select"
+      ],
+      "other_selection_mechanics": [],
+      "env_status": "custom_handler_present",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\Snap.cs",
+      "bridge_can_tighten_mask": true,
+      "bridge_observation_gap": true,
+      "risk": "low"
+    },
+    {
+      "card_id": "Splash",
+      "mechanics": [
+        "choose_a_card_screen"
+      ],
+      "hand_selection_mechanics": [],
+      "other_selection_mechanics": [
+        "choose_a_card_screen"
+      ],
+      "env_status": "missing_explicit_handler",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\Splash.cs",
+      "bridge_can_tighten_mask": false,
+      "bridge_observation_gap": false,
+      "risk": "medium"
+    },
+    {
+      "card_id": "Survivor",
+      "mechanics": [
+        "combat_hand_discard"
+      ],
+      "hand_selection_mechanics": [
+        "combat_hand_discard"
+      ],
+      "other_selection_mechanics": [],
+      "env_status": "custom_handler_present",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\Survivor.cs",
+      "bridge_can_tighten_mask": true,
+      "bridge_observation_gap": true,
+      "risk": "low"
+    },
+    {
+      "card_id": "ThinkingAhead",
+      "mechanics": [
+        "combat_hand_select"
+      ],
+      "hand_selection_mechanics": [
+        "combat_hand_select"
+      ],
+      "other_selection_mechanics": [],
+      "env_status": "custom_handler_present",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\ThinkingAhead.cs",
+      "bridge_can_tighten_mask": true,
+      "bridge_observation_gap": true,
+      "risk": "low"
+    },
+    {
+      "card_id": "Transfigure",
+      "mechanics": [
+        "combat_hand_select"
+      ],
+      "hand_selection_mechanics": [
+        "combat_hand_select"
+      ],
+      "other_selection_mechanics": [],
+      "env_status": "custom_handler_present",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\Transfigure.cs",
+      "bridge_can_tighten_mask": true,
+      "bridge_observation_gap": true,
+      "risk": "low"
+    },
+    {
+      "card_id": "TrueGrit",
+      "mechanics": [
+        "combat_hand_exhaust"
+      ],
+      "hand_selection_mechanics": [
+        "combat_hand_exhaust"
+      ],
+      "other_selection_mechanics": [],
+      "env_status": "custom_handler_present",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\TrueGrit.cs",
+      "bridge_can_tighten_mask": true,
+      "bridge_observation_gap": true,
+      "risk": "low"
+    },
+    {
+      "card_id": "Wish",
+      "mechanics": [
+        "grid_draw_pile"
+      ],
+      "hand_selection_mechanics": [],
+      "other_selection_mechanics": [
+        "grid_draw_pile"
+      ],
+      "env_status": "missing_explicit_handler",
+      "env_notes": [],
+      "decompiled_file": "decompiled\\MegaCrit.Sts2.Core.Models.Cards\\Wish.cs",
+      "bridge_can_tighten_mask": false,
+      "bridge_observation_gap": false,
+      "risk": "medium"
+    }
+  ]
+}

@@ -1,0 +1,1255 @@
+[
+  {
+    "id": "Architect",
+    "hp_min": 9999,
+    "hp_max": 9999,
+    "moves": [
+      "NOTHING"
+    ]
+  },
+  {
+    "id": "AssassinRubyRaider",
+    "hp_min": 18,
+    "hp_min_asc": 19,
+    "hp_max": 23,
+    "hp_max_asc": 24,
+    "moves": [
+      "KILLSHOT_MOVE"
+    ]
+  },
+  {
+    "id": "Axebot",
+    "hp_min": 40,
+    "hp_min_asc": 42,
+    "hp_max": 44,
+    "hp_max_asc": 46,
+    "moves": [
+      "BOOT_UP_MOVE",
+      "HAMMER_UPPERCUT_MOVE",
+      "ONE_TWO_MOVE",
+      "SHARPEN_MOVE"
+    ]
+  },
+  {
+    "id": "AxeRubyRaider",
+    "hp_min": 20,
+    "hp_min_asc": 21,
+    "hp_max": 22,
+    "hp_max_asc": 23,
+    "moves": [
+      "BIG_SWING",
+      "SWING_1",
+      "SWING_2"
+    ]
+  },
+  {
+    "id": "BattleFriendV1",
+    "hp_min": 75,
+    "hp_max": 75,
+    "moves": [
+      "NOTHING_MOVE"
+    ]
+  },
+  {
+    "id": "BattleFriendV2",
+    "hp_min": 150,
+    "hp_max": 150,
+    "moves": [
+      "NOTHING_MOVE"
+    ]
+  },
+  {
+    "id": "BattleFriendV3",
+    "hp_min": 300,
+    "hp_max": 300,
+    "moves": [
+      "NOTHING_MOVE"
+    ]
+  },
+  {
+    "id": "BigDummy",
+    "hp_min": 9999,
+    "hp_max": 9999,
+    "moves": [
+      "NOTHING"
+    ]
+  },
+  {
+    "id": "BowlbugEgg",
+    "hp_min": 21,
+    "hp_min_asc": 23,
+    "hp_max": 22,
+    "hp_max_asc": 24,
+    "moves": [
+      "BITE_MOVE"
+    ]
+  },
+  {
+    "id": "BowlbugNectar",
+    "hp_min": 35,
+    "hp_min_asc": 36,
+    "hp_max": 38,
+    "hp_max_asc": 39,
+    "moves": [
+      "BUFF_MOVE",
+      "THRASH2_MOVE",
+      "THRASH_MOVE"
+    ]
+  },
+  {
+    "id": "BowlbugRock",
+    "hp_min": 45,
+    "hp_min_asc": 46,
+    "hp_max": 48,
+    "hp_max_asc": 49,
+    "moves": [
+      "DIZZY_MOVE",
+      "HEADBUTT_MOVE"
+    ]
+  },
+  {
+    "id": "BowlbugSilk",
+    "hp_min": 40,
+    "hp_min_asc": 41,
+    "hp_max": 43,
+    "hp_max_asc": 44,
+    "moves": [
+      "TOXIC_SPIT_MOVE",
+      "TRASH_MOVE"
+    ]
+  },
+  {
+    "id": "BruteRubyRaider",
+    "hp_min": 30,
+    "hp_min_asc": 31,
+    "hp_max": 33,
+    "hp_max_asc": 34,
+    "moves": [
+      "BEAT_MOVE",
+      "ROAR_MOVE"
+    ]
+  },
+  {
+    "id": "BygoneEffigy",
+    "hp_min": 127,
+    "hp_min_asc": 132,
+    "moves": [
+      "INITIAL_SLEEP_MOVE",
+      "SLASHES_MOVE",
+      "SLEEP_MOVE",
+      "WAKE_MOVE"
+    ]
+  },
+  {
+    "id": "Byrdonis",
+    "hp_min": 91,
+    "hp_min_asc": 99,
+    "hp_max": 94,
+    "hp_max_asc": 99,
+    "moves": [
+      "PECK_MOVE",
+      "SWOOP_MOVE"
+    ]
+  },
+  {
+    "id": "Byrdpip",
+    "hp_min": 9999,
+    "hp_max": 9999,
+    "moves": [
+      "NOTHING_MOVE"
+    ]
+  },
+  {
+    "id": "CalcifiedCultist",
+    "hp_min": 38,
+    "hp_min_asc": 39,
+    "hp_max": 41,
+    "hp_max_asc": 42,
+    "moves": [
+      "DARK_STRIKE_MOVE",
+      "INCANTATION_MOVE"
+    ]
+  },
+  {
+    "id": "CeremonialBeast",
+    "hp_min": 252,
+    "hp_min_asc": 262,
+    "moves": [
+      "BEAST_CRY_MOVE",
+      "CRUSH_MOVE",
+      "PLOW_MOVE",
+      "STAMP_MOVE",
+      "STOMP_MOVE",
+      "STUN_MOVE"
+    ]
+  },
+  {
+    "id": "Chomper",
+    "hp_min": 60,
+    "hp_min_asc": 63,
+    "hp_max": 64,
+    "hp_max_asc": 67,
+    "moves": [
+      "CLAMP_MOVE",
+      "SCREECH_MOVE"
+    ]
+  },
+  {
+    "id": "CorpseSlug",
+    "hp_min": 25,
+    "hp_min_asc": 27,
+    "hp_max": 27,
+    "hp_max_asc": 29,
+    "moves": [
+      "GLOMP_MOVE",
+      "GOOP_MOVE",
+      "WHIP_SLAP_MOVE"
+    ]
+  },
+  {
+    "id": "CrossbowRubyRaider",
+    "hp_min": 18,
+    "hp_min_asc": 19,
+    "hp_max": 21,
+    "hp_max_asc": 22,
+    "moves": [
+      "FIRE_MOVE",
+      "RELOAD_MOVE"
+    ]
+  },
+  {
+    "id": "Crusher",
+    "hp_min": 209,
+    "hp_min_asc": 219,
+    "moves": [
+      "ADAPT_MOVE",
+      "BUG_STING_MOVE",
+      "ENLARGING_STRIKE_MOVE",
+      "GUARDED_STRIKE_MOVE",
+      "THRASH_MOVE"
+    ]
+  },
+  {
+    "id": "CubexConstruct",
+    "hp_min": 65,
+    "hp_min_asc": 70,
+    "moves": [
+      "CHARGE_UP_MOVE",
+      "EXPEL_BLAST",
+      "REPEATER_MOVE",
+      "REPEATER_MOVE_2",
+      "SUBMERGE_MOVE"
+    ]
+  },
+  {
+    "id": "DampCultist",
+    "hp_min": 51,
+    "hp_min_asc": 52,
+    "hp_max": 53,
+    "hp_max_asc": 54,
+    "moves": [
+      "DARK_STRIKE_MOVE",
+      "INCANTATION_MOVE"
+    ]
+  },
+  {
+    "id": "DecimillipedeSegment",
+    "hp_min": 40,
+    "hp_min_asc": 46,
+    "hp_max": 46,
+    "hp_max_asc": 52,
+    "moves": [
+      "BULK_MOVE",
+      "CONSTRICT_MOVE",
+      "DEAD_MOVE",
+      "REATTACH_MOVE",
+      "WRITHE_MOVE"
+    ]
+  },
+  {
+    "id": "DevotedSculptor",
+    "hp_min": 162,
+    "hp_min_asc": 172,
+    "moves": [
+      "FORBIDDEN_INCANTATION_MOVE",
+      "SAVAGE_MOVE"
+    ]
+  },
+  {
+    "id": "Doormaker",
+    "hp_min": 489,
+    "hp_min_asc": 512,
+    "moves": [
+      "DRAMATIC_OPEN_MOVE",
+      "GRASP_MOVE",
+      "HUNGER_MOVE",
+      "SCRUTINY_MOVE"
+    ]
+  },
+  {
+    "id": "Entomancer",
+    "hp_min": 145,
+    "hp_min_asc": 155,
+    "moves": [
+      "BEES_MOVE",
+      "PHEROMONE_SPIT_MOVE",
+      "SPEAR_MOVE"
+    ]
+  },
+  {
+    "id": "Exoskeleton",
+    "hp_min": 24,
+    "hp_min_asc": 25,
+    "hp_max": 28,
+    "hp_max_asc": 29,
+    "moves": [
+      "ENRAGE_MOVE",
+      "MANDIBLE_MOVE",
+      "SKITTER_MOVE"
+    ]
+  },
+  {
+    "id": "EyeWithTeeth",
+    "hp_min": 6,
+    "moves": [
+      "DISTRACT_MOVE"
+    ]
+  },
+  {
+    "id": "Fabricator",
+    "hp_min": 150,
+    "hp_min_asc": 155,
+    "moves": [
+      "DISINTEGRATE_MOVE",
+      "FABRICATE_MOVE",
+      "FABRICATING_STRIKE_MOVE"
+    ]
+  },
+  {
+    "id": "FakeMerchantMonster",
+    "hp_min": 165,
+    "hp_min_asc": 175,
+    "hp_max": 165,
+    "hp_max_asc": 175,
+    "moves": [
+      "ENRAGE_MOVE",
+      "SPEW_COINS_MOVE",
+      "SWIPE_MOVE",
+      "THROW_RELIC_MOVE"
+    ],
+    "attacks": [
+      {
+        "type": "multi",
+        "damage": 2,
+        "hits": 8
+      }
+    ]
+  },
+  {
+    "id": "FatGremlin",
+    "hp_min": 13,
+    "hp_min_asc": 14,
+    "hp_max": 17,
+    "hp_max_asc": 18,
+    "moves": [
+      "FLEE_MOVE",
+      "SPAWNED_MOVE"
+    ]
+  },
+  {
+    "id": "FlailKnight",
+    "hp_min": 101,
+    "hp_min_asc": 108,
+    "moves": [
+      "FLAIL_MOVE",
+      "RAM_MOVE",
+      "WAR_CHANT"
+    ]
+  },
+  {
+    "id": "Flyconid",
+    "hp_min": 47,
+    "hp_min_asc": 51,
+    "hp_max": 49,
+    "hp_max_asc": 53,
+    "moves": [
+      "FRAIL_SPORES_MOVE",
+      "SMASH_MOVE",
+      "VULNERABLE_SPORES_MOVE"
+    ]
+  },
+  {
+    "id": "Fogmog",
+    "hp_min": 74,
+    "hp_min_asc": 78,
+    "moves": [
+      "HEADBUTT_MOVE",
+      "ILLUSION_MOVE",
+      "SWIPE_MOVE",
+      "SWIPE_RANDOM_MOVE"
+    ]
+  },
+  {
+    "id": "FossilStalker",
+    "hp_min": 51,
+    "hp_min_asc": 54,
+    "hp_max": 53,
+    "hp_max_asc": 56,
+    "moves": [
+      "LASH_MOVE",
+      "LATCH_MOVE",
+      "TACKLE_MOVE"
+    ]
+  },
+  {
+    "id": "FrogKnight",
+    "hp_min": 191,
+    "hp_min_asc": 199,
+    "moves": [
+      "BEETLE_CHARGE",
+      "FOR_THE_QUEEN",
+      "STRIKE_DOWN_EVIL",
+      "TONGUE_LASH"
+    ]
+  },
+  {
+    "id": "FuzzyWurmCrawler",
+    "hp_min": 55,
+    "hp_min_asc": 58,
+    "hp_max": 57,
+    "hp_max_asc": 59,
+    "moves": [
+      "ACID_GOOP",
+      "FIRST_ACID_GOOP",
+      "INHALE"
+    ]
+  },
+  {
+    "id": "GasBomb",
+    "hp_min": 7,
+    "hp_min_asc": 8,
+    "moves": [
+      "EXPLODE_MOVE"
+    ]
+  },
+  {
+    "id": "GlobeHead",
+    "hp_min": 148,
+    "hp_min_asc": 158,
+    "moves": [
+      "GALVANIC_BURST",
+      "SHOCKING_SLAP",
+      "THUNDER_STRIKE"
+    ]
+  },
+  {
+    "id": "GremlinMerc",
+    "hp_min": 47,
+    "hp_min_asc": 51,
+    "hp_max": 49,
+    "hp_max_asc": 53,
+    "moves": [
+      "DOUBLE_SMASH_MOVE",
+      "GIMME_MOVE",
+      "HEHE_MOVE"
+    ]
+  },
+  {
+    "id": "Guardbot",
+    "hp_min": 16,
+    "hp_min_asc": 17,
+    "hp_max": 20,
+    "hp_max_asc": 21,
+    "moves": [
+      "GUARD_MOVE"
+    ]
+  },
+  {
+    "id": "HauntedShip",
+    "hp_min": 63,
+    "hp_min_asc": 67,
+    "moves": [
+      "HAUNT_MOVE",
+      "RAMMING_SPEED_MOVE",
+      "STOMP_MOVE",
+      "SWIPE_MOVE"
+    ]
+  },
+  {
+    "id": "HunterKiller",
+    "hp_min": 121,
+    "hp_min_asc": 126,
+    "moves": [
+      "BITE_MOVE",
+      "PUNCTURE_MOVE",
+      "TENDERIZING_GOOP_MOVE"
+    ]
+  },
+  {
+    "id": "InfestedPrism",
+    "hp_min": 200,
+    "hp_min_asc": 215,
+    "moves": [
+      "JAB_MOVE",
+      "PULSATE_MOVE",
+      "RADIATE_MOVE",
+      "WHIRLWIND_MOVE"
+    ]
+  },
+  {
+    "id": "Inklet",
+    "hp_min": 11,
+    "hp_min_asc": 12,
+    "hp_max": 17,
+    "hp_max_asc": 18,
+    "moves": [
+      "JAB_MOVE",
+      "PIERCING_GAZE_MOVE",
+      "WHIRLWIND_MOVE"
+    ]
+  },
+  {
+    "id": "KinFollower",
+    "hp_min": 58,
+    "hp_min_asc": 62,
+    "hp_max": 59,
+    "hp_max_asc": 63,
+    "moves": [
+      "BOOMERANG_MOVE",
+      "POWER_DANCE_MOVE",
+      "QUICK_SLASH_MOVE"
+    ]
+  },
+  {
+    "id": "KinPriest",
+    "hp_min": 190,
+    "hp_min_asc": 199,
+    "moves": [
+      "BEAM_MOVE",
+      "ORB_OF_FRAILTY_MOVE",
+      "ORB_OF_WEAKNESS_MOVE",
+      "RITUAL_MOVE"
+    ]
+  },
+  {
+    "id": "KnowledgeDemon",
+    "hp_min": 379,
+    "hp_min_asc": 399,
+    "moves": [
+      "CURSE_OF_KNOWLEDGE_MOVE",
+      "KNOWLEDGE_OVERWHELMING_MOVE",
+      "PONDER_MOVE",
+      "SLAP_MOVE"
+    ]
+  },
+  {
+    "id": "LagavulinMatriarch",
+    "hp_min": 222,
+    "hp_min_asc": 233,
+    "moves": [
+      "DISEMBOWEL_MOVE",
+      "SLASH2_MOVE",
+      "SLASH_MOVE",
+      "SLEEP_MOVE",
+      "SOUL_SIPHON_MOVE"
+    ]
+  },
+  {
+    "id": "LeafSlimeM",
+    "hp_min": 32,
+    "hp_min_asc": 33,
+    "hp_max": 35,
+    "hp_max_asc": 36,
+    "moves": [
+      "CLUMP_SHOT",
+      "STICKY_SHOT"
+    ]
+  },
+  {
+    "id": "LeafSlimeS",
+    "hp_min": 11,
+    "hp_min_asc": 12,
+    "hp_max": 15,
+    "hp_max_asc": 16,
+    "moves": [
+      "BUTT_MOVE",
+      "GOOP_MOVE"
+    ]
+  },
+  {
+    "id": "LivingFog",
+    "hp_min": 80,
+    "hp_min_asc": 82,
+    "moves": [
+      "ADVANCED_GAS_MOVE",
+      "BLOAT_MOVE",
+      "SUPER_GAS_BLAST_MOVE"
+    ]
+  },
+  {
+    "id": "LivingShield",
+    "hp_min": 55,
+    "hp_min_asc": 65,
+    "moves": [
+      "SHIELD_SLAM_MOVE",
+      "SMASH_MOVE"
+    ]
+  },
+  {
+    "id": "LouseProgenitor",
+    "hp_min": 134,
+    "hp_min_asc": 138,
+    "hp_max": 136,
+    "hp_max_asc": 141,
+    "moves": [
+      "CURL_AND_GROW_MOVE",
+      "POUNCE_MOVE",
+      "WEB_CANNON_MOVE"
+    ]
+  },
+  {
+    "id": "MagiKnight",
+    "hp_min": 82,
+    "hp_min_asc": 89,
+    "moves": [
+      "DAMPEN_MOVE",
+      "FIRST_POWER_SHIELD_MOVE",
+      "MAGIC_BOMB",
+      "PREP_MOVE",
+      "RAM_MOVE"
+    ]
+  },
+  {
+    "id": "Mawler",
+    "hp_min": 72,
+    "hp_min_asc": 76,
+    "moves": [
+      "CLAW_MOVE",
+      "RIP_AND_TEAR_MOVE",
+      "ROAR_MOVE"
+    ]
+  },
+  {
+    "id": "MechaKnight",
+    "hp_min": 300,
+    "hp_min_asc": 320,
+    "moves": [
+      "CHARGE_MOVE",
+      "FLAMETHROWER_MOVE",
+      "HEAVY_CLEAVE_MOVE",
+      "WINDUP_MOVE"
+    ]
+  },
+  {
+    "id": "MultiAttackMoveMonster",
+    "hp_min": 999,
+    "hp_max": 999,
+    "moves": [
+      "POKE"
+    ],
+    "attacks": [
+      {
+        "type": "multi",
+        "damage": 1,
+        "hits": 5
+      }
+    ]
+  },
+  {
+    "id": "Myte",
+    "hp_min": 61,
+    "hp_min_asc": 64,
+    "hp_max": 67,
+    "hp_max_asc": 69,
+    "moves": [
+      "BITE_MOVE",
+      "SUCK_MOVE",
+      "TOXIC_MOVE"
+    ]
+  },
+  {
+    "id": "Nibbit",
+    "hp_min": 42,
+    "hp_min_asc": 44,
+    "hp_max": 46,
+    "hp_max_asc": 48,
+    "moves": [
+      "BUTT_MOVE",
+      "HISS_MOVE",
+      "SLICE_MOVE"
+    ]
+  },
+  {
+    "id": "Noisebot",
+    "hp_min": 18,
+    "hp_min_asc": 19,
+    "hp_max": 23,
+    "hp_max_asc": 24,
+    "moves": [
+      "NOISE_MOVE"
+    ]
+  },
+  {
+    "id": "OneHpMonster",
+    "hp_min": 1,
+    "hp_max": 1,
+    "moves": [
+      "NOTHING"
+    ]
+  },
+  {
+    "id": "Osty",
+    "hp_min": 1,
+    "hp_max": 1,
+    "moves": [
+      "NOTHING_MOVE"
+    ]
+  },
+  {
+    "id": "Ovicopter",
+    "hp_min": 124,
+    "hp_min_asc": 126,
+    "hp_max": 130,
+    "hp_max_asc": 132,
+    "moves": [
+      "LAY_EGGS_MOVE",
+      "NUTRITIONAL_PASTE_MOVE",
+      "SMASH_MOVE",
+      "TENDERIZER_MOVE"
+    ]
+  },
+  {
+    "id": "OwlMagistrate",
+    "hp_min": 234,
+    "hp_min_asc": 243,
+    "moves": [
+      "JUDICIAL_FLIGHT",
+      "MAGISTRATE_SCRUTINY",
+      "PECK_ASSAULT",
+      "VERDICT"
+    ]
+  },
+  {
+    "id": "PaelsLegion",
+    "hp_min": 9999,
+    "hp_max": 9999,
+    "moves": [
+      "NOTHING_MOVE"
+    ]
+  },
+  {
+    "id": "Parafright",
+    "hp_min": 21,
+    "moves": [
+      "SLAM_MOVE"
+    ]
+  },
+  {
+    "id": "PhantasmalGardener",
+    "hp_min": 26,
+    "hp_min_asc": 27,
+    "hp_max": 31,
+    "hp_max_asc": 32,
+    "moves": [
+      "BITE_MOVE",
+      "ENLARGE_MOVE",
+      "FLAIL_MOVE",
+      "LASH_MOVE"
+    ]
+  },
+  {
+    "id": "PhrogParasite",
+    "hp_min": 61,
+    "hp_min_asc": 66,
+    "hp_max": 64,
+    "hp_max_asc": 68,
+    "moves": [
+      "INFECT_MOVE",
+      "LASH_MOVE"
+    ]
+  },
+  {
+    "id": "PunchConstruct",
+    "hp_min": 55,
+    "hp_min_asc": 60,
+    "moves": [
+      "FAST_PUNCH_MOVE",
+      "READY_MOVE",
+      "STRONG_PUNCH_MOVE"
+    ]
+  },
+  {
+    "id": "Queen",
+    "hp_min": 400,
+    "hp_min_asc": 419,
+    "moves": [
+      "BURN_BRIGHT_FOR_ME_MOVE",
+      "ENRAGE_MOVE",
+      "EXECUTION_MOVE",
+      "OFF_WITH_YOUR_HEAD_MOVE",
+      "PUPPET_STRINGS_MOVE",
+      "YOUR_MINE_MOVE"
+    ]
+  },
+  {
+    "id": "Rocket",
+    "hp_min": 199,
+    "hp_min_asc": 209,
+    "moves": [
+      "CHARGE_UP_MOVE",
+      "LASER_MOVE",
+      "PRECISION_BEAM_MOVE",
+      "RECHARGE_MOVE",
+      "TARGETING_RETICLE_MOVE"
+    ]
+  },
+  {
+    "id": "ScrollOfBiting",
+    "hp_min": 31,
+    "hp_min_asc": 32,
+    "hp_max": 38,
+    "hp_max_asc": 39,
+    "moves": [
+      "CHEW",
+      "CHOMP",
+      "MORE_TEETH"
+    ]
+  },
+  {
+    "id": "Seapunk",
+    "hp_min": 44,
+    "hp_min_asc": 47,
+    "hp_max": 46,
+    "hp_max_asc": 49,
+    "moves": [
+      "BUBBLE_BURP_MOVE",
+      "SEA_KICK_MOVE",
+      "SPINNING_KICK_MOVE"
+    ]
+  },
+  {
+    "id": "SewerClam",
+    "hp_min": 56,
+    "hp_min_asc": 58,
+    "moves": [
+      "JET_MOVE",
+      "PRESSURIZE_MOVE"
+    ]
+  },
+  {
+    "id": "ShrinkerBeetle",
+    "hp_min": 38,
+    "hp_min_asc": 40,
+    "hp_max": 40,
+    "hp_max_asc": 42,
+    "moves": [
+      "CHOMP_MOVE",
+      "SHRINKER_MOVE",
+      "STOMP_MOVE"
+    ]
+  },
+  {
+    "id": "SingleAttackMoveMonster",
+    "hp_min": 999,
+    "hp_max": 999,
+    "moves": [
+      "POKE"
+    ],
+    "attacks": [
+      {
+        "type": "single",
+        "damage": 1
+      }
+    ]
+  },
+  {
+    "id": "SkulkingColony",
+    "hp_min": 74,
+    "hp_min_asc": 79,
+    "moves": [
+      "INERTIA_MOVE",
+      "PIERCING_STABS_MOVE",
+      "SMASH_MOVE",
+      "ZOOM_MOVE"
+    ]
+  },
+  {
+    "id": "SlimedBerserker",
+    "hp_min": 266,
+    "hp_min_asc": 276,
+    "moves": [
+      "FURIOUS_PUMMELING_MOVE",
+      "LEECHING_HUG_MOVE",
+      "SMOTHER_MOVE",
+      "VOMIT_ICHOR_MOVE"
+    ]
+  },
+  {
+    "id": "SlitheringStrangler",
+    "hp_min": 53,
+    "hp_min_asc": 54,
+    "hp_max": 55,
+    "hp_max_asc": 56,
+    "moves": [
+      "CONSTRICT",
+      "LASH",
+      "TWACK"
+    ]
+  },
+  {
+    "id": "SludgeSpinner",
+    "hp_min": 37,
+    "hp_min_asc": 41,
+    "hp_max": 39,
+    "hp_max_asc": 42,
+    "moves": [
+      "OIL_SPRAY_MOVE",
+      "RAGE_MOVE",
+      "SLAM_MOVE"
+    ]
+  },
+  {
+    "id": "SlumberingBeetle",
+    "hp_min": 86,
+    "hp_min_asc": 89,
+    "moves": [
+      "ROLL_OUT_MOVE",
+      "SNORE_MOVE"
+    ]
+  },
+  {
+    "id": "SnappingJaxfruit",
+    "hp_min": 31,
+    "hp_min_asc": 34,
+    "hp_max": 33,
+    "hp_max_asc": 36,
+    "moves": [
+      "ENERGY_ORB_MOVE"
+    ]
+  },
+  {
+    "id": "SneakyGremlin",
+    "hp_min": 10,
+    "hp_min_asc": 11,
+    "hp_max": 14,
+    "hp_max_asc": 15,
+    "moves": [
+      "SPAWNED_MOVE",
+      "TACKLE_MOVE"
+    ]
+  },
+  {
+    "id": "SoulFysh",
+    "hp_min": 211,
+    "hp_min_asc": 221,
+    "moves": [
+      "BECKON_MOVE",
+      "DE_GAS_MOVE",
+      "FADE_MOVE",
+      "GAZE_MOVE",
+      "SCREAM_MOVE"
+    ]
+  },
+  {
+    "id": "SoulNexus",
+    "hp_min": 234,
+    "hp_min_asc": 254,
+    "moves": [
+      "DRAIN_LIFE_MOVE",
+      "MAELSTROM_MOVE",
+      "SOUL_BURN_MOVE"
+    ]
+  },
+  {
+    "id": "SpectralKnight",
+    "hp_min": 93,
+    "hp_min_asc": 97,
+    "moves": [
+      "HEX",
+      "SOUL_FLAME",
+      "SOUL_SLASH"
+    ]
+  },
+  {
+    "id": "SpinyToad",
+    "hp_min": 116,
+    "hp_min_asc": 121,
+    "hp_max": 119,
+    "hp_max_asc": 124,
+    "moves": [
+      "PROTRUDING_SPIKES_MOVE",
+      "SPIKE_EXPLOSION_MOVE",
+      "TONGUE_LASH_MOVE"
+    ]
+  },
+  {
+    "id": "Stabbot",
+    "hp_min": 18,
+    "hp_min_asc": 19,
+    "hp_max": 23,
+    "hp_max_asc": 24,
+    "moves": [
+      "STAB_MOVE"
+    ]
+  },
+  {
+    "id": "TenHpMonster",
+    "hp_min": 10,
+    "hp_max": 10,
+    "moves": [
+      "NOTHING"
+    ]
+  },
+  {
+    "id": "TerrorEel",
+    "hp_min": 140,
+    "hp_min_asc": 150,
+    "moves": [
+      "CRASH_MOVE",
+      "STUN_MOVE",
+      "TERROR_MOVE",
+      "ThrashMove"
+    ]
+  },
+  {
+    "id": "TheAdversaryMkOne",
+    "hp_min": 100,
+    "moves": [
+      "BARRAGE_MOVE",
+      "BEAM_MOVE",
+      "SMASH_MOVE"
+    ]
+  },
+  {
+    "id": "TheAdversaryMkThree",
+    "hp_min": 300,
+    "hp_min_asc": 300,
+    "moves": [
+      "BARRAGE_MOVE",
+      "CRASH_MOVE",
+      "FLAME_BEAM_MOVE"
+    ]
+  },
+  {
+    "id": "TheAdversaryMkTwo",
+    "hp_min": 200,
+    "hp_min_asc": 200,
+    "moves": [
+      "BARRAGE_MOVE",
+      "BASH_MOVE",
+      "FLAME_BEAM_MOVE"
+    ]
+  },
+  {
+    "id": "TheForgotten",
+    "hp_min": 106,
+    "hp_min_asc": 111,
+    "moves": [
+      "DREAD",
+      "MIASMA"
+    ]
+  },
+  {
+    "id": "TheInsatiable",
+    "hp_min": 321,
+    "hp_min_asc": 341,
+    "moves": [
+      "LIQUIFY_GROUND_MOVE",
+      "LUNGING_BITE_MOVE",
+      "SALIVATE_MOVE",
+      "THRASH_MOVE_1",
+      "THRASH_MOVE_2"
+    ]
+  },
+  {
+    "id": "TheLost",
+    "hp_min": 93,
+    "hp_min_asc": 99,
+    "moves": [
+      "DEBILITATING_SMOG",
+      "EYE_LASERS"
+    ]
+  },
+  {
+    "id": "TheObscura",
+    "hp_min": 123,
+    "hp_min_asc": 129,
+    "moves": [
+      "HARDENING_STRIKE_MOVE",
+      "ILLUSION_MOVE",
+      "PIERCING_GAZE_MOVE",
+      "SAIL_MOVE"
+    ]
+  },
+  {
+    "id": "ThievingHopper",
+    "hp_min": 79,
+    "hp_min_asc": 84,
+    "moves": [
+      "ESCAPE_MOVE",
+      "FLUTTER_MOVE",
+      "HAT_TRICK_MOVE",
+      "NAB_MOVE",
+      "THIEVERY_MOVE"
+    ]
+  },
+  {
+    "id": "Toadpole",
+    "hp_min": 21,
+    "hp_min_asc": 22,
+    "hp_max": 25,
+    "hp_max_asc": 26,
+    "moves": [
+      "SPIKEN_MOVE",
+      "SPIKE_SPIT_MOVE",
+      "WHIRL_MOVE"
+    ]
+  },
+  {
+    "id": "TorchHeadAmalgam",
+    "hp_min": 199,
+    "hp_min_asc": 211,
+    "moves": [
+      "BEAM_MOVE",
+      "TACKLE_1_MOVE",
+      "TACKLE_2_MOVE",
+      "TACKLE_3_MOVE",
+      "TACKLE_4_MOVE"
+    ]
+  },
+  {
+    "id": "ToughEgg",
+    "hp_min": 14,
+    "hp_min_asc": 15,
+    "hp_max": 18,
+    "hp_max_asc": 19,
+    "moves": [
+      "HATCH_MOVE",
+      "NIBBLE_MOVE"
+    ]
+  },
+  {
+    "id": "TrackerRubyRaider",
+    "hp_min": 21,
+    "hp_min_asc": 22,
+    "hp_max": 25,
+    "hp_max_asc": 26,
+    "moves": [
+      "HOUNDS_MOVE",
+      "TRACK_MOVE"
+    ]
+  },
+  {
+    "id": "Tunneler",
+    "hp_min": 87,
+    "hp_min_asc": 92,
+    "moves": [
+      "BELOW_MOVE_1",
+      "BITE_MOVE",
+      "BURROW_MOVE",
+      "DIZZY_MOVE"
+    ]
+  },
+  {
+    "id": "TurretOperator",
+    "hp_min": 41,
+    "hp_min_asc": 51,
+    "moves": [
+      "RELOAD_MOVE",
+      "UNLOAD_MOVE_1",
+      "UNLOAD_MOVE_2"
+    ]
+  },
+  {
+    "id": "TwigSlimeM",
+    "hp_min": 26,
+    "hp_min_asc": 27,
+    "hp_max": 28,
+    "hp_max_asc": 29,
+    "moves": [
+      "CLUMP_SHOT_MOVE",
+      "STICKY_SHOT_MOVE"
+    ]
+  },
+  {
+    "id": "TwigSlimeS",
+    "hp_min": 7,
+    "hp_min_asc": 8,
+    "hp_max": 11,
+    "hp_max_asc": 12,
+    "moves": [
+      "BUTT_MOVE"
+    ]
+  },
+  {
+    "id": "TwoTailedRat",
+    "hp_min": 17,
+    "hp_min_asc": 18,
+    "hp_max": 21,
+    "hp_max_asc": 22,
+    "moves": [
+      "CALL_FOR_BACKUP_MOVE",
+      "DISEASE_BITE_MOVE",
+      "SCRATCH_MOVE",
+      "SCREECH_MOVE"
+    ]
+  },
+  {
+    "id": "Vantom",
+    "hp_min": 173,
+    "hp_min_asc": 183,
+    "moves": [
+      "DISMEMBER_MOVE",
+      "INKY_LANCE_MOVE",
+      "INK_BLOT_MOVE",
+      "PREPARE_MOVE"
+    ]
+  },
+  {
+    "id": "VineShambler",
+    "hp_min": 61,
+    "hp_min_asc": 64,
+    "moves": [
+      "CHOMP_MOVE",
+      "GRASPING_VINES_MOVE",
+      "SWIPE_MOVE"
+    ]
+  },
+  {
+    "id": "WaterfallGiant",
+    "hp_min": 240,
+    "hp_min_asc": 250,
+    "moves": [
+      "ABOUT_TO_BLOW_MOVE",
+      "EXPLODE_MOVE",
+      "PRESSURE_GUN_MOVE",
+      "PRESSURE_UP_MOVE",
+      "PRESSURIZE_MOVE",
+      "RAM_MOVE",
+      "SIPHON_MOVE",
+      "STOMP_MOVE"
+    ]
+  },
+  {
+    "id": "Wriggler",
+    "hp_min": 17,
+    "hp_min_asc": 18,
+    "hp_max": 21,
+    "hp_max_asc": 22,
+    "moves": [
+      "NASTY_BITE_MOVE",
+      "SPAWNED_MOVE",
+      "WRIGGLE_MOVE"
+    ]
+  },
+  {
+    "id": "Zapbot",
+    "hp_min": 18,
+    "hp_min_asc": 19,
+    "hp_max": 23,
+    "hp_max_asc": 24,
+    "moves": [
+      "ZAP"
+    ]
+  }
+]

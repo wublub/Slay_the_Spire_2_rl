@@ -1,0 +1,12 @@
+D:\Slay the Spire 2 v0.101.0\Slay_the_Spire_2_rl-main\game_mod\Sts2RlBridge\obj\Release\net9.0\Sts2RlBridge.csproj.AssemblyReference.cache
+D:\Slay the Spire 2 v0.101.0\Slay_the_Spire_2_rl-main\game_mod\Sts2RlBridge\obj\Release\net9.0\Sts2RlBridge.GeneratedMSBuildEditorConfig.editorconfig
+D:\Slay the Spire 2 v0.101.0\Slay_the_Spire_2_rl-main\game_mod\Sts2RlBridge\obj\Release\net9.0\Sts2RlBridge.AssemblyInfoInputs.cache
+D:\Slay the Spire 2 v0.101.0\Slay_the_Spire_2_rl-main\game_mod\Sts2RlBridge\obj\Release\net9.0\Sts2RlBridge.AssemblyInfo.cs
+D:\Slay the Spire 2 v0.101.0\Slay_the_Spire_2_rl-main\game_mod\Sts2RlBridge\obj\Release\net9.0\Sts2RlBridge.csproj.CoreCompileInputs.cache
+D:\Slay the Spire 2 v0.101.0\Slay_the_Spire_2_rl-main\game_mod\Sts2RlBridge\bin\Release\net9.0\Sts2RlBridge.deps.json
+D:\Slay the Spire 2 v0.101.0\Slay_the_Spire_2_rl-main\game_mod\Sts2RlBridge\bin\Release\net9.0\Sts2RlBridge.dll
+D:\Slay the Spire 2 v0.101.0\Slay_the_Spire_2_rl-main\game_mod\Sts2RlBridge\bin\Release\net9.0\Sts2RlBridge.pdb
+D:\Slay the Spire 2 v0.101.0\Slay_the_Spire_2_rl-main\game_mod\Sts2RlBridge\obj\Release\net9.0\Sts2RlBridge.dll
+D:\Slay the Spire 2 v0.101.0\Slay_the_Spire_2_rl-main\game_mod\Sts2RlBridge\obj\Release\net9.0\refint\Sts2RlBridge.dll
+D:\Slay the Spire 2 v0.101.0\Slay_the_Spire_2_rl-main\game_mod\Sts2RlBridge\obj\Release\net9.0\Sts2RlBridge.pdb
+D:\Slay the Spire 2 v0.101.0\Slay_the_Spire_2_rl-main\game_mod\Sts2RlBridge\obj\Release\net9.0\ref\Sts2RlBridge.dll

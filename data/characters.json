@@ -1,0 +1,129 @@
+[
+  {
+    "id": "Defect",
+    "starting_hp": 75,
+    "starting_gold": 99,
+    "starting_deck": [
+      "StrikeDefect",
+      "StrikeDefect",
+      "StrikeDefect",
+      "StrikeDefect",
+      "DefendDefect",
+      "DefendDefect",
+      "DefendDefect",
+      "DefendDefect",
+      "Zap",
+      "Dualcast"
+    ],
+    "starting_relics": [
+      "CrackedCore"
+    ]
+  },
+  {
+    "id": "Deprived",
+    "starting_hp": 1000,
+    "starting_gold": 99
+  },
+  {
+    "id": "Ironclad",
+    "starting_hp": 80,
+    "starting_gold": 99,
+    "starting_deck": [
+      "StrikeIronclad",
+      "StrikeIronclad",
+      "StrikeIronclad",
+      "StrikeIronclad",
+      "StrikeIronclad",
+      "DefendIronclad",
+      "DefendIronclad",
+      "DefendIronclad",
+      "DefendIronclad",
+      "Bash"
+    ],
+    "starting_relics": [
+      "BurningBlood"
+    ]
+  },
+  {
+    "id": "Necrobinder",
+    "starting_hp": 66,
+    "starting_gold": 99,
+    "starting_deck": [
+      "StrikeNecrobinder",
+      "StrikeNecrobinder",
+      "StrikeNecrobinder",
+      "StrikeNecrobinder",
+      "DefendNecrobinder",
+      "DefendNecrobinder",
+      "DefendNecrobinder",
+      "DefendNecrobinder",
+      "Bodyguard",
+      "Unleash"
+    ],
+    "starting_relics": [
+      "BoundPhylactery"
+    ]
+  },
+  {
+    "id": "RandomCharacter",
+    "starting_hp": 1,
+    "starting_gold": 1,
+    "starting_deck": [
+      "StrikeIronclad",
+      "StrikeSilent",
+      "StrikeRegent",
+      "StrikeNecrobinder",
+      "StrikeDefect",
+      "DefendIronclad",
+      "DefendSilent",
+      "DefendRegent",
+      "DefendNecrobinder",
+      "DefendDefect"
+    ],
+    "starting_relics": [
+      "Circlet"
+    ]
+  },
+  {
+    "id": "Regent",
+    "starting_hp": 75,
+    "starting_gold": 99,
+    "starting_deck": [
+      "StrikeRegent",
+      "StrikeRegent",
+      "StrikeRegent",
+      "StrikeRegent",
+      "DefendRegent",
+      "DefendRegent",
+      "DefendRegent",
+      "DefendRegent",
+      "FallingStar",
+      "Venerate"
+    ],
+    "starting_relics": [
+      "DivineRight"
+    ]
+  },
+  {
+    "id": "Silent",
+    "starting_hp": 70,
+    "starting_gold": 99,
+    "starting_deck": [
+      "StrikeSilent",
+      "StrikeSilent",
+      "StrikeSilent",
+      "StrikeSilent",
+      "StrikeSilent",
+      "DefendSilent",
+      "DefendSilent",
+      "DefendSilent",
+      "DefendSilent",
+      "DefendSilent",
+      "Neutralize",
+      "Survivor"
+    ],
+    "starting_relics": [
+      "RingOfTheSnake"
+    ]
+  }
+]

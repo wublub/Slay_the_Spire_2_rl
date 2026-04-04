@@ -1,0 +1,7090 @@
+[
+  {
+    "id": "Abrasive",
+    "cost": 3,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Silent",
+    "powers": {
+      "ThornsPower": 4,
+      "DexterityPower": 1
+    },
+    "keywords": [
+      "Sly"
+    ]
+  },
+  {
+    "id": "Accelerant",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Silent",
+    "vars": {
+      "Accelerant": 1
+    }
+  },
+  {
+    "id": "Accuracy",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Silent",
+    "powers": {
+      "AccuracyPower": 4
+    }
+  },
+  {
+    "id": "Acrobatics",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Silent"
+  },
+  {
+    "id": "AdaptiveStrike",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Defect",
+    "damage": 18,
+    "tags": [
+      "Strike"
+    ],
+    "upgrade": {
+      "damage": 5
+    }
+  },
+  {
+    "id": "Adrenaline",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Silent",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Afterimage",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Silent",
+    "powers": {
+      "AfterimagePower": 1
+    },
+    "keywords": [
+      "Innate"
+    ]
+  },
+  {
+    "id": "Afterlife",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Aggression",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Ironclad",
+    "keywords": [
+      "Innate"
+    ]
+  },
+  {
+    "id": "Alchemize",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Colorless",
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Alignment",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Regent"
+  },
+  {
+    "id": "AllForOne",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Defect",
+    "damage": 10,
+    "upgrade": {
+      "damage": 4
+    }
+  },
+  {
+    "id": "Anger",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "damage": 6,
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "Anointed",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Colorless",
+    "keywords": [
+      "Exhaust",
+      "Retain"
+    ]
+  },
+  {
+    "id": "Anticipate",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Silent",
+    "powers": {
+      "DexterityPower": 2
+    }
+  },
+  {
+    "id": "Apotheosis",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Ancient",
+    "target": "Self",
+    "pool": "Event",
+    "keywords": [
+      "Exhaust",
+      "Innate"
+    ],
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Apparition",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Ancient",
+    "target": "Self",
+    "pool": "Event",
+    "powers": {
+      "IntangiblePower": 1
+    },
+    "keywords": [
+      "Ethereal",
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Armaments",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Ironclad",
+    "block": 5
+  },
+  {
+    "id": "Arsenal",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Regent",
+    "powers": {
+      "ArsenalPower": 1
+    },
+    "keywords": [
+      "Innate"
+    ]
+  },
+  {
+    "id": "AscendersBane",
+    "cost": -1,
+    "type": "Curse",
+    "rarity": "Curse",
+    "target": "None",
+    "pool": "Curse",
+    "keywords": [
+      "Eternal",
+      "Ethereal",
+      "Unplayable"
+    ]
+  },
+  {
+    "id": "AshenStrike",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "keywords": [
+      "Exhaust"
+    ],
+    "tags": [
+      "Strike"
+    ],
+    "upgrade": {
+      "damage": 1
+    }
+  },
+  {
+    "id": "Assassinate",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Silent",
+    "damage": 10,
+    "powers": {
+      "VulnerablePower": 1
+    },
+    "keywords": [
+      "Exhaust",
+      "Innate"
+    ],
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "AstralPulse",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AllEnemies",
+    "pool": "Regent",
+    "damage": 14,
+    "upgrade": {
+      "damage": 4
+    }
+  },
+  {
+    "id": "Automation",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Colorless",
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Backflip",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Silent",
+    "block": 5,
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "Backstab",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Silent",
+    "damage": 11,
+    "keywords": [
+      "Exhaust",
+      "Innate"
+    ],
+    "upgrade": {
+      "damage": 4
+    }
+  },
+  {
+    "id": "BadLuck",
+    "cost": -1,
+    "type": "Curse",
+    "rarity": "Curse",
+    "target": "None",
+    "pool": "Curse",
+    "keywords": [
+      "Eternal",
+      "Unplayable"
+    ]
+  },
+  {
+    "id": "BallLightning",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Defect",
+    "damage": 7,
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "BansheesCry",
+    "cost": 9,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AllEnemies",
+    "pool": "Necrobinder",
+    "damage": 33,
+    "keywords": [
+      "Ethereal"
+    ],
+    "upgrade": {
+      "cost": -2
+    }
+  },
+  {
+    "id": "Barrage",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Defect",
+    "damage": 5,
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "Barricade",
+    "cost": 3,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Ironclad",
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Bash",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Basic",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "damage": 8,
+    "powers": {
+      "VulnerablePower": 2
+    },
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "BattleTrance",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Ironclad"
+  },
+  {
+    "id": "BeaconOfHope",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Colorless",
+    "keywords": [
+      "Innate"
+    ]
+  },
+  {
+    "id": "BeamCell",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Defect",
+    "damage": 3,
+    "powers": {
+      "VulnerablePower": 1
+    },
+    "upgrade": {
+      "damage": 1
+    }
+  },
+  {
+    "id": "BeatDown",
+    "cost": 3,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "RandomEnemy",
+    "pool": "Colorless",
+    "keywords": [
+      "Unplayable"
+    ]
+  },
+  {
+    "id": "BeatIntoShape",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Regent",
+    "damage": 5,
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "Beckon",
+    "cost": 1,
+    "type": "Status",
+    "rarity": "Status",
+    "target": "None",
+    "pool": "Status"
+  },
+  {
+    "id": "Begone",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Regent"
+  },
+  {
+    "id": "BelieveInYou",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AnyAlly",
+    "pool": "Colorless"
+  },
+  {
+    "id": "BiasedCognition",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Ancient",
+    "target": "Self",
+    "pool": "Defect",
+    "powers": {
+      "FocusPower": 4,
+      "BiasedCognitionPower": 1
+    }
+  },
+  {
+    "id": "BigBang",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Regent",
+    "keywords": [
+      "Exhaust",
+      "Innate"
+    ]
+  },
+  {
+    "id": "BlackHole",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Regent",
+    "powers": {
+      "BlackHolePower": 3
+    }
+  },
+  {
+    "id": "BladeDance",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Silent",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "BladeOfInk",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Silent",
+    "powers": {
+      "StrengthPower": 2
+    }
+  },
+  {
+    "id": "BlightStrike",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "damage": 8,
+    "tags": [
+      "Strike"
+    ],
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "Bloodletting",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Ironclad"
+  },
+  {
+    "id": "BloodWall",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Ironclad",
+    "block": 16,
+    "upgrade": {
+      "block": 4
+    }
+  },
+  {
+    "id": "Bludgeon",
+    "cost": 3,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "damage": 32,
+    "upgrade": {
+      "damage": 10
+    }
+  },
+  {
+    "id": "Blur",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Silent",
+    "block": 5,
+    "vars": {
+      "Blur": 1
+    },
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "Bodyguard",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Basic",
+    "target": "Self",
+    "pool": "Necrobinder"
+  },
+  {
+    "id": "BodySlam",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Bolas",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Colorless",
+    "damage": 3,
+    "upgrade": {
+      "damage": 1
+    }
+  },
+  {
+    "id": "Bombardment",
+    "cost": 3,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Regent",
+    "damage": 18,
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "damage": 6
+    }
+  },
+  {
+    "id": "BoneShards",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AllEnemies",
+    "pool": "Necrobinder",
+    "block": 9,
+    "tags": [
+      "OstyAttack"
+    ],
+    "upgrade": {
+      "damage": 3,
+      "block": 3
+    }
+  },
+  {
+    "id": "BoostAway",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Defect",
+    "block": 6,
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "BootSequence",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Defect",
+    "block": 10,
+    "keywords": [
+      "Exhaust",
+      "Innate"
+    ],
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "BorrowedTime",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "powers": {
+      "DoomPower": 3
+    }
+  },
+  {
+    "id": "BouncingFlask",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "RandomEnemy",
+    "pool": "Silent",
+    "powers": {
+      "PoisonPower": 3
+    }
+  },
+  {
+    "id": "Brand",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Ironclad",
+    "powers": {
+      "StrengthPower": 1
+    },
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Break",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Ancient",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "damage": 20,
+    "powers": {
+      "VulnerablePower": 5
+    },
+    "upgrade": {
+      "damage": 10
+    }
+  },
+  {
+    "id": "Breakthrough",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AllEnemies",
+    "pool": "Ironclad",
+    "damage": 9,
+    "upgrade": {
+      "damage": 4
+    }
+  },
+  {
+    "id": "BrightestFlame",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Ancient",
+    "target": "Self",
+    "pool": "Event"
+  },
+  {
+    "id": "BubbleBubble",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Silent",
+    "powers": {
+      "PoisonPower": 9
+    }
+  },
+  {
+    "id": "Buffer",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Defect",
+    "powers": {
+      "BufferPower": 1
+    }
+  },
+  {
+    "id": "BulkUp",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Defect",
+    "powers": {
+      "StrengthPower": 2,
+      "DexterityPower": 2
+    },
+    "vars": {
+      "OrbSlots": 1
+    }
+  },
+  {
+    "id": "BulletTime",
+    "cost": 3,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Silent",
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Bully",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "upgrade": {
+      "damage": 1
+    }
+  },
+  {
+    "id": "Bulwark",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Regent",
+    "block": 13,
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "BundleOfJoy",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Regent",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Burn",
+    "cost": -1,
+    "type": "Status",
+    "rarity": "Status",
+    "target": "None",
+    "pool": "Status",
+    "damage": 2,
+    "keywords": [
+      "Unplayable"
+    ]
+  },
+  {
+    "id": "BurningPact",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Ironclad",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Burst",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Silent",
+    "vars": {
+      "Skills": 1
+    }
+  },
+  {
+    "id": "Bury",
+    "cost": 4,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "damage": 52,
+    "upgrade": {
+      "damage": 11
+    }
+  },
+  {
+    "id": "ByrdonisEgg",
+    "cost": -1,
+    "type": "Quest",
+    "rarity": "Quest",
+    "target": "None",
+    "pool": "Quest",
+    "keywords": [
+      "Unplayable"
+    ]
+  },
+  {
+    "id": "ByrdSwoop",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Event",
+    "target": "AnyEnemy",
+    "pool": "Event",
+    "damage": 14,
+    "upgrade": {
+      "damage": 4
+    }
+  },
+  {
+    "id": "Calamity",
+    "cost": 3,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Colorless",
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Calcify",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "powers": {
+      "CalcifyPower": 4
+    }
+  },
+  {
+    "id": "CalculatedGamble",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Silent",
+    "keywords": [
+      "Exhaust",
+      "Retain"
+    ]
+  },
+  {
+    "id": "CallOfTheVoid",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "keywords": [
+      "Ethereal",
+      "Innate"
+    ]
+  },
+  {
+    "id": "Caltrops",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Event",
+    "target": "Self",
+    "pool": "Event",
+    "powers": {
+      "ThornsPower": 3
+    }
+  },
+  {
+    "id": "Capacitor",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Defect"
+  },
+  {
+    "id": "CaptureSpirit",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "damage": 3,
+    "upgrade": {
+      "damage": 1
+    }
+  },
+  {
+    "id": "Cascade",
+    "cost": -1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Ironclad"
+  },
+  {
+    "id": "Catastrophe",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Colorless",
+    "keywords": [
+      "Unplayable"
+    ]
+  },
+  {
+    "id": "CelestialMight",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Regent",
+    "damage": 6
+  },
+  {
+    "id": "Chaos",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Defect"
+  },
+  {
+    "id": "Charge",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Regent"
+  },
+  {
+    "id": "ChargeBattery",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Defect",
+    "block": 7,
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "ChildOfTheStars",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Regent",
+    "vars": {
+      "BlockForStars": 2
+    }
+  },
+  {
+    "id": "Chill",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Defect",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Cinder",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "damage": 18,
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "damage": 6
+    }
+  },
+  {
+    "id": "Clash",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Event",
+    "target": "AnyEnemy",
+    "pool": "Event",
+    "damage": 14,
+    "upgrade": {
+      "damage": 4
+    }
+  },
+  {
+    "id": "Claw",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Defect",
+    "damage": 3,
+    "vars": {
+      "Increase": 2
+    },
+    "upgrade": {
+      "damage": 1
+    }
+  },
+  {
+    "id": "Cleanse",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "CloakAndDagger",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Silent",
+    "block": 6
+  },
+  {
+    "id": "CloakOfStars",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Regent",
+    "block": 7,
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "Clumsy",
+    "cost": -1,
+    "type": "Curse",
+    "rarity": "Curse",
+    "target": "None",
+    "pool": "Curse",
+    "keywords": [
+      "Ethereal",
+      "Unplayable"
+    ]
+  },
+  {
+    "id": "ColdSnap",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Defect",
+    "damage": 6,
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "CollisionCourse",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Regent",
+    "damage": 11,
+    "upgrade": {
+      "damage": 4
+    }
+  },
+  {
+    "id": "Colossus",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Ironclad",
+    "block": 5,
+    "vars": {
+      "Colossus": 1
+    },
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "Comet",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Regent",
+    "damage": 33,
+    "powers": {
+      "VulnerablePower": 3,
+      "WeakPower": 3
+    },
+    "upgrade": {
+      "damage": 11
+    }
+  },
+  {
+    "id": "Compact",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Defect",
+    "block": 6,
+    "upgrade": {
+      "block": 1
+    }
+  },
+  {
+    "id": "CompileDriver",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Defect",
+    "damage": 7,
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "Conflagration",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AllEnemies",
+    "pool": "Ironclad",
+    "upgrade": {
+      "damage": 1
+    }
+  },
+  {
+    "id": "Conqueror",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Regent"
+  },
+  {
+    "id": "ConsumingShadow",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Defect",
+    "powers": {
+      "ConsumingShadowPower": 1
+    }
+  },
+  {
+    "id": "Convergence",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Regent",
+    "keywords": [
+      "Retain"
+    ]
+  },
+  {
+    "id": "Coolant",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Defect",
+    "powers": {
+      "CoolantPower": 2
+    }
+  },
+  {
+    "id": "Coolheaded",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Defect"
+  },
+  {
+    "id": "Coordinate",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AnyAlly",
+    "pool": "Colorless",
+    "powers": {
+      "StrengthPower": 5
+    }
+  },
+  {
+    "id": "CorrosiveWave",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Silent",
+    "vars": {
+      "CorrosiveWave": 2
+    }
+  },
+  {
+    "id": "Corruption",
+    "cost": 3,
+    "type": "Power",
+    "rarity": "Ancient",
+    "target": "Self",
+    "pool": "Ironclad",
+    "vars": {
+      "Power": 1
+    },
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "CosmicIndifference",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Regent",
+    "block": 6,
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "Countdown",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "powers": {
+      "CountdownPower": 6
+    }
+  },
+  {
+    "id": "CrashLanding",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AllEnemies",
+    "pool": "Regent",
+    "damage": 21,
+    "upgrade": {
+      "damage": 5
+    }
+  },
+  {
+    "id": "CreativeAi",
+    "cost": 3,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Defect",
+    "vars": {
+      "CreativeAi": 1
+    },
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "CrescentSpear",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Regent",
+    "upgrade": {
+      "damage": 1
+    }
+  },
+  {
+    "id": "CrimsonMantle",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Ironclad",
+    "powers": {
+      "CrimsonMantlePower": 8
+    }
+  },
+  {
+    "id": "Cruelty",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Ironclad",
+    "powers": {
+      "CrueltyPower": 25
+    }
+  },
+  {
+    "id": "CrushUnder",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AllEnemies",
+    "pool": "Regent",
+    "damage": 7,
+    "vars": {
+      "StrengthLoss": 1
+    },
+    "upgrade": {
+      "damage": 1
+    }
+  },
+  {
+    "id": "CurseOfTheBell",
+    "cost": -1,
+    "type": "Curse",
+    "rarity": "Curse",
+    "target": "None",
+    "pool": "Curse",
+    "keywords": [
+      "Eternal",
+      "Unplayable"
+    ]
+  },
+  {
+    "id": "DaggerSpray",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AllEnemies",
+    "pool": "Silent",
+    "damage": 4,
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "DaggerThrow",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Silent",
+    "damage": 9,
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "DanseMacabre",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "powers": {
+      "DanseMacabrePower": 4
+    }
+  },
+  {
+    "id": "DarkEmbrace",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Ironclad",
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Darkness",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Defect"
+  },
+  {
+    "id": "DarkShackles",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Colorless",
+    "vars": {
+      "StrengthLoss": 9
+    },
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Dash",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Silent",
+    "damage": 10,
+    "block": 10,
+    "upgrade": {
+      "damage": 3,
+      "block": 3
+    }
+  },
+  {
+    "id": "Dazed",
+    "cost": -1,
+    "type": "Status",
+    "rarity": "Status",
+    "target": "None",
+    "pool": "Status",
+    "keywords": [
+      "Ethereal",
+      "Unplayable"
+    ]
+  },
+  {
+    "id": "DeadlyPoison",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Silent",
+    "powers": {
+      "PoisonPower": 5
+    }
+  },
+  {
+    "id": "Deathbringer",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AllEnemies",
+    "pool": "Necrobinder",
+    "powers": {
+      "DoomPower": 21,
+      "WeakPower": 1
+    }
+  },
+  {
+    "id": "DeathMarch",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "upgrade": {
+      "damage": 1
+    }
+  },
+  {
+    "id": "DeathsDoor",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "block": 6,
+    "upgrade": {
+      "block": 1
+    }
+  },
+  {
+    "id": "Debilitate",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "damage": 10,
+    "powers": {
+      "DebilitatePower": 3
+    },
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "Debris",
+    "cost": 1,
+    "type": "Status",
+    "rarity": "Status",
+    "target": "None",
+    "pool": "Status",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Debt",
+    "cost": -1,
+    "type": "Curse",
+    "rarity": "Curse",
+    "target": "None",
+    "pool": "Curse",
+    "keywords": [
+      "Unplayable"
+    ]
+  },
+  {
+    "id": "Decay",
+    "cost": -1,
+    "type": "Curse",
+    "rarity": "Curse",
+    "target": "None",
+    "pool": "Curse",
+    "damage": 2,
+    "keywords": [
+      "Unplayable"
+    ]
+  },
+  {
+    "id": "DecisionsDecisions",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Regent",
+    "keywords": [
+      "Exhaust",
+      "Unplayable"
+    ]
+  },
+  {
+    "id": "DefendDefect",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Basic",
+    "target": "Self",
+    "pool": "Defect",
+    "block": 5,
+    "tags": [
+      "Defend"
+    ],
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "DefendIronclad",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Basic",
+    "target": "Self",
+    "pool": "Ironclad",
+    "block": 5,
+    "tags": [
+      "Defend"
+    ],
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "DefendNecrobinder",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Basic",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "block": 5,
+    "tags": [
+      "Defend"
+    ],
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "DefendRegent",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Basic",
+    "target": "Self",
+    "pool": "Regent",
+    "block": 5,
+    "tags": [
+      "Defend"
+    ],
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "DefendSilent",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Basic",
+    "target": "Self",
+    "pool": "Silent",
+    "block": 5,
+    "tags": [
+      "Defend"
+    ],
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "Defile",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "damage": 13,
+    "keywords": [
+      "Ethereal"
+    ],
+    "upgrade": {
+      "damage": 4
+    }
+  },
+  {
+    "id": "Deflect",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Silent",
+    "block": 4,
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "Defragment",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Defect",
+    "powers": {
+      "FocusPower": 1
+    }
+  },
+  {
+    "id": "Defy",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "block": 6,
+    "powers": {
+      "WeakPower": 1
+    },
+    "keywords": [
+      "Ethereal"
+    ],
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "Delay",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "block": 11,
+    "upgrade": {
+      "block": 2
+    }
+  },
+  {
+    "id": "Demesne",
+    "cost": 3,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "keywords": [
+      "Ethereal"
+    ],
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "DemonForm",
+    "cost": 3,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Ironclad",
+    "powers": {
+      "StrengthPower": 2
+    }
+  },
+  {
+    "id": "DemonicShield",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AnyAlly",
+    "pool": "Ironclad",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "DeprecatedCard",
+    "cost": 0,
+    "type": "Status",
+    "rarity": "Status",
+    "target": "None",
+    "pool": "DeprecatedCardPool",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Devastate",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Regent",
+    "damage": 30,
+    "upgrade": {
+      "damage": 10
+    }
+  },
+  {
+    "id": "DevourLife",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "powers": {
+      "DevourLifePower": 1
+    }
+  },
+  {
+    "id": "Dirge",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Discovery",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Colorless",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Disintegration",
+    "cost": -1,
+    "type": "Status",
+    "rarity": "Status",
+    "target": "None",
+    "pool": "Token",
+    "powers": {
+      "DisintegrationPower": 6
+    }
+  },
+  {
+    "id": "Dismantle",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "damage": 8,
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "Distraction",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Event",
+    "target": "Self",
+    "pool": "Event",
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "DodgeAndRoll",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Silent",
+    "block": 4,
+    "upgrade": {
+      "block": 2
+    }
+  },
+  {
+    "id": "Dominate",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "powers": {
+      "VulnerablePower": 1
+    },
+    "vars": {
+      "StrengthPerVulnerable": 1
+    },
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "DoubleEnergy",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Defect",
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Doubt",
+    "cost": -1,
+    "type": "Curse",
+    "rarity": "Curse",
+    "target": "None",
+    "pool": "Curse",
+    "powers": {
+      "WeakPower": 1
+    },
+    "keywords": [
+      "Unplayable"
+    ]
+  },
+  {
+    "id": "DrainPower",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "damage": 10,
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "DramaticEntrance",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AllEnemies",
+    "pool": "Colorless",
+    "damage": 11,
+    "keywords": [
+      "Exhaust",
+      "Innate"
+    ],
+    "upgrade": {
+      "damage": 4
+    }
+  },
+  {
+    "id": "Dredge",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "keywords": [
+      "Exhaust",
+      "Retain"
+    ]
+  },
+  {
+    "id": "DrumOfBattle",
+    "cost": 0,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Ironclad",
+    "powers": {
+      "DrumOfBattlePower": 1
+    },
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Dualcast",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Basic",
+    "target": "Self",
+    "pool": "Defect",
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "DualWield",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Event",
+    "target": "Self",
+    "pool": "Event"
+  },
+  {
+    "id": "DyingStar",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AllEnemies",
+    "pool": "Regent",
+    "damage": 9,
+    "vars": {
+      "StrengthLoss": 9
+    },
+    "keywords": [
+      "Ethereal"
+    ],
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "EchoForm",
+    "cost": 3,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Defect",
+    "vars": {
+      "EchoForm": 1
+    },
+    "keywords": [
+      "Ethereal"
+    ]
+  },
+  {
+    "id": "EchoingSlash",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AllEnemies",
+    "pool": "Silent",
+    "damage": 10,
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "Eidolon",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "EndOfDays",
+    "cost": 3,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "AllEnemies",
+    "pool": "Necrobinder",
+    "powers": {
+      "DoomPower": 29
+    }
+  },
+  {
+    "id": "EnergySurge",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AllAllies",
+    "pool": "Defect",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "EnfeeblingTouch",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "vars": {
+      "StrengthLoss": 8
+    },
+    "keywords": [
+      "Ethereal"
+    ]
+  },
+  {
+    "id": "Enlightenment",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Event",
+    "target": "Self",
+    "pool": "Event",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Enthralled",
+    "cost": 2,
+    "type": "Curse",
+    "rarity": "Curse",
+    "target": "None",
+    "pool": "Curse",
+    "keywords": [
+      "Eternal"
+    ]
+  },
+  {
+    "id": "Entrench",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Event",
+    "target": "Self",
+    "pool": "Event",
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Entropy",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Colorless",
+    "keywords": [
+      "Innate"
+    ]
+  },
+  {
+    "id": "Envenom",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Silent",
+    "powers": {
+      "EnvenomPower": 1
+    }
+  },
+  {
+    "id": "Equilibrium",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Colorless",
+    "block": 13,
+    "vars": {
+      "Equilibrium": 1
+    },
+    "keywords": [
+      "Retain"
+    ],
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "Eradicate",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "damage": 11,
+    "keywords": [
+      "Retain"
+    ],
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "EscapePlan",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Silent",
+    "block": 3,
+    "upgrade": {
+      "block": 2
+    }
+  },
+  {
+    "id": "EternalArmor",
+    "cost": 3,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Colorless",
+    "powers": {
+      "PlatingPower": 9
+    }
+  },
+  {
+    "id": "EvilEye",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Ironclad",
+    "block": 8,
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "ExpectAFight",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Ironclad",
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Expertise",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Silent"
+  },
+  {
+    "id": "Expose",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Silent",
+    "vars": {
+      "Power": 2
+    },
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Exterminate",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Event",
+    "target": "AllEnemies",
+    "pool": "Event",
+    "damage": 3,
+    "upgrade": {
+      "damage": 1
+    }
+  },
+  {
+    "id": "FallingStar",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Basic",
+    "target": "AnyEnemy",
+    "pool": "Regent",
+    "damage": 8,
+    "powers": {
+      "VulnerablePower": 1,
+      "WeakPower": 1
+    },
+    "upgrade": {
+      "damage": 4
+    }
+  },
+  {
+    "id": "FanOfKnives",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Silent"
+  },
+  {
+    "id": "Fasten",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Colorless",
+    "vars": {
+      "ExtraBlock": 5
+    },
+    "tags": [
+      "Defend"
+    ]
+  },
+  {
+    "id": "Fear",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "damage": 7,
+    "powers": {
+      "VulnerablePower": 1
+    },
+    "keywords": [
+      "Ethereal"
+    ],
+    "upgrade": {
+      "damage": 1
+    }
+  },
+  {
+    "id": "Feed",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "damage": 10,
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "FeedingFrenzy",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Event",
+    "target": "Self",
+    "pool": "Event",
+    "powers": {
+      "StrengthPower": 5
+    }
+  },
+  {
+    "id": "FeelNoPain",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Ironclad",
+    "vars": {
+      "Power": 3
+    },
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Feral",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Defect",
+    "powers": {
+      "FeralPower": 1
+    },
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Fetch",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "tags": [
+      "OstyAttack"
+    ],
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "FiendFire",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "damage": 7,
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "FightMe",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "damage": 5,
+    "powers": {
+      "StrengthPower": 3
+    },
+    "vars": {
+      "EnemyStrength": 1
+    },
+    "upgrade": {
+      "damage": 1
+    }
+  },
+  {
+    "id": "FightThrough",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Defect",
+    "block": 13,
+    "upgrade": {
+      "block": 4
+    }
+  },
+  {
+    "id": "Finesse",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Colorless",
+    "block": 4,
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "Finisher",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Silent",
+    "damage": 6,
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "Fisticuffs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Colorless",
+    "damage": 7,
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "FlakCannon",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "RandomEnemy",
+    "pool": "Defect",
+    "damage": 8,
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "FlameBarrier",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Ironclad",
+    "block": 12,
+    "vars": {
+      "DamageBack": 4
+    },
+    "upgrade": {
+      "block": 4
+    }
+  },
+  {
+    "id": "Flanking",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Silent",
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "FlashOfSteel",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Colorless",
+    "damage": 5,
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "Flatten",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "tags": [
+      "OstyAttack"
+    ],
+    "upgrade": {
+      "damage": 4
+    }
+  },
+  {
+    "id": "Flechettes",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Silent",
+    "damage": 5,
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "FlickFlack",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AllEnemies",
+    "pool": "Silent",
+    "damage": 6,
+    "keywords": [
+      "Sly"
+    ],
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "FocusedStrike",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Defect",
+    "damage": 9,
+    "powers": {
+      "FocusPower": 1
+    },
+    "tags": [
+      "Strike"
+    ],
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "FollowThrough",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AllEnemies",
+    "pool": "Silent",
+    "damage": 6,
+    "powers": {
+      "WeakPower": 1
+    },
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "Folly",
+    "cost": -1,
+    "type": "Curse",
+    "rarity": "Curse",
+    "target": "None",
+    "pool": "Curse",
+    "keywords": [
+      "Eternal",
+      "Ethereal",
+      "Innate",
+      "Unplayable"
+    ]
+  },
+  {
+    "id": "Footwork",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Silent",
+    "powers": {
+      "DexterityPower": 2
+    }
+  },
+  {
+    "id": "ForbiddenGrimoire",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Ancient",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "keywords": [
+      "Eternal"
+    ],
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "ForegoneConclusion",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Regent"
+  },
+  {
+    "id": "ForgottenRitual",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Ironclad",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "FranticEscape",
+    "cost": 1,
+    "type": "Status",
+    "rarity": "Status",
+    "target": "Self",
+    "pool": "Status"
+  },
+  {
+    "id": "Friendship",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "powers": {
+      "StrengthPower": 2
+    }
+  },
+  {
+    "id": "Ftl",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Defect",
+    "damage": 5,
+    "upgrade": {
+      "damage": 1
+    }
+  },
+  {
+    "id": "Fuel",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Token",
+    "target": "Self",
+    "pool": "Token",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Furnace",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Regent"
+  },
+  {
+    "id": "Fusion",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Defect",
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "GammaBlast",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Regent",
+    "damage": 13,
+    "powers": {
+      "VulnerablePower": 2,
+      "WeakPower": 2
+    },
+    "upgrade": {
+      "damage": 5
+    }
+  },
+  {
+    "id": "GangUp",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Colorless",
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "GatherLight",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Regent",
+    "block": 8,
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "Genesis",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Regent",
+    "vars": {
+      "StarsPerTurn": 2
+    }
+  },
+  {
+    "id": "GeneticAlgorithm",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Defect",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "GiantRock",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Token",
+    "target": "AnyEnemy",
+    "pool": "Token",
+    "damage": 16,
+    "upgrade": {
+      "damage": 4
+    }
+  },
+  {
+    "id": "Glacier",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Defect",
+    "block": 6,
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "Glasswork",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Defect",
+    "block": 5,
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "Glimmer",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Regent",
+    "vars": {
+      "PutBack": 1
+    }
+  },
+  {
+    "id": "GlimpseBeyond",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "AllAllies",
+    "pool": "Necrobinder",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Glitterstream",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Regent",
+    "block": 11,
+    "upgrade": {
+      "block": 2
+    }
+  },
+  {
+    "id": "Glow",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Regent"
+  },
+  {
+    "id": "GoForTheEyes",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Defect",
+    "damage": 3,
+    "powers": {
+      "WeakPower": 1
+    },
+    "upgrade": {
+      "damage": 1
+    }
+  },
+  {
+    "id": "GoldAxe",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Colorless",
+    "keywords": [
+      "Retain"
+    ]
+  },
+  {
+    "id": "GrandFinale",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AllEnemies",
+    "pool": "Silent",
+    "damage": 60,
+    "upgrade": {
+      "damage": 15
+    }
+  },
+  {
+    "id": "Grapple",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "damage": 7,
+    "powers": {
+      "GrapplePower": 5
+    },
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "Graveblast",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "damage": 4,
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "GraveWarden",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "block": 8,
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "Greed",
+    "cost": -1,
+    "type": "Curse",
+    "rarity": "Curse",
+    "target": "None",
+    "pool": "Curse",
+    "keywords": [
+      "Eternal",
+      "Unplayable"
+    ]
+  },
+  {
+    "id": "Guards",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Regent",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "GuidingStar",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Regent",
+    "damage": 12,
+    "upgrade": {
+      "damage": 1
+    }
+  },
+  {
+    "id": "Guilty",
+    "cost": -1,
+    "type": "Curse",
+    "rarity": "Curse",
+    "target": "None",
+    "pool": "Curse",
+    "vars": {
+      "Combats": 5
+    },
+    "keywords": [
+      "Unplayable"
+    ]
+  },
+  {
+    "id": "GunkUp",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Defect",
+    "damage": 4,
+    "upgrade": {
+      "damage": 1
+    }
+  },
+  {
+    "id": "Hailstorm",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Defect",
+    "powers": {
+      "HailstormPower": 6
+    }
+  },
+  {
+    "id": "HammerTime",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Regent",
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "HandOfGreed",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Colorless",
+    "damage": 20,
+    "vars": {
+      "Gold": 20
+    },
+    "upgrade": {
+      "damage": 5
+    }
+  },
+  {
+    "id": "HandTrick",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Silent",
+    "block": 7,
+    "keywords": [
+      "Sly"
+    ],
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "Hang",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "damage": 10,
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "Haunt",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Necrobinder"
+  },
+  {
+    "id": "Havoc",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Ironclad",
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Haze",
+    "cost": 3,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AllEnemies",
+    "pool": "Silent",
+    "powers": {
+      "PoisonPower": 4
+    },
+    "keywords": [
+      "Sly"
+    ]
+  },
+  {
+    "id": "Headbutt",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "damage": 9,
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "HeavenlyDrill",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Regent",
+    "damage": 8,
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "Hegemony",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Regent",
+    "damage": 15,
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "HeirloomHammer",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Regent",
+    "damage": 20,
+    "upgrade": {
+      "damage": 5
+    }
+  },
+  {
+    "id": "HelixDrill",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Defect",
+    "damage": 3,
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "HelloWorld",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Event",
+    "target": "Self",
+    "pool": "Event",
+    "keywords": [
+      "Innate"
+    ]
+  },
+  {
+    "id": "Hellraiser",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Ironclad",
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Hemokinesis",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "damage": 15,
+    "upgrade": {
+      "damage": 5
+    }
+  },
+  {
+    "id": "HiddenCache",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Regent",
+    "powers": {
+      "StarNextTurnPower": 3
+    }
+  },
+  {
+    "id": "HiddenDaggers",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Silent",
+    "vars": {
+      "Shivs": 2
+    }
+  },
+  {
+    "id": "HiddenGem",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Colorless",
+    "keywords": [
+      "Unplayable"
+    ]
+  },
+  {
+    "id": "HighFive",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AllEnemies",
+    "pool": "Necrobinder",
+    "powers": {
+      "VulnerablePower": 2
+    },
+    "tags": [
+      "OstyAttack"
+    ],
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "Hologram",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Defect",
+    "block": 3,
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "block": 2
+    }
+  },
+  {
+    "id": "Hotfix",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Defect",
+    "powers": {
+      "FocusPower": 2
+    },
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "HowlFromBeyond",
+    "cost": 3,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AllEnemies",
+    "pool": "Ironclad",
+    "damage": 16,
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "damage": 5
+    }
+  },
+  {
+    "id": "HuddleUp",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AllAllies",
+    "pool": "Colorless",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Hyperbeam",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AllEnemies",
+    "pool": "Defect",
+    "damage": 26,
+    "powers": {
+      "FocusPower": 3
+    },
+    "upgrade": {
+      "damage": 8
+    }
+  },
+  {
+    "id": "IAmInvincible",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Regent",
+    "block": 10,
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "IceLance",
+    "cost": 3,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Defect",
+    "damage": 19,
+    "upgrade": {
+      "damage": 5
+    }
+  },
+  {
+    "id": "Ignition",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "AnyAlly",
+    "pool": "Defect",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Impatience",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Colorless"
+  },
+  {
+    "id": "Impervious",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Ironclad",
+    "block": 30,
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "block": 10
+    }
+  },
+  {
+    "id": "Infection",
+    "cost": -1,
+    "type": "Status",
+    "rarity": "Status",
+    "target": "None",
+    "pool": "Status",
+    "damage": 3,
+    "keywords": [
+      "Unplayable"
+    ]
+  },
+  {
+    "id": "InfernalBlade",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Ironclad",
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Inferno",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Ironclad",
+    "powers": {
+      "InfernoPower": 6
+    }
+  },
+  {
+    "id": "InfiniteBlades",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Silent",
+    "keywords": [
+      "Innate"
+    ]
+  },
+  {
+    "id": "Inflame",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Ironclad",
+    "powers": {
+      "StrengthPower": 2
+    }
+  },
+  {
+    "id": "Injury",
+    "cost": -1,
+    "type": "Curse",
+    "rarity": "Curse",
+    "target": "None",
+    "pool": "Curse",
+    "keywords": [
+      "Unplayable"
+    ]
+  },
+  {
+    "id": "Intercept",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AnyAlly",
+    "pool": "Colorless",
+    "block": 9,
+    "upgrade": {
+      "block": 4
+    }
+  },
+  {
+    "id": "Invoke",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Necrobinder"
+  },
+  {
+    "id": "IronWave",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "damage": 5,
+    "block": 5,
+    "upgrade": {
+      "damage": 2,
+      "block": 2
+    }
+  },
+  {
+    "id": "Iteration",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Defect",
+    "powers": {
+      "IterationPower": 2
+    }
+  },
+  {
+    "id": "JackOfAllTrades",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Colorless",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Jackpot",
+    "cost": 3,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Colorless",
+    "damage": 25,
+    "upgrade": {
+      "damage": 5
+    }
+  },
+  {
+    "id": "Juggernaut",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Ironclad",
+    "powers": {
+      "JuggernautPower": 5
+    }
+  },
+  {
+    "id": "Juggling",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Ironclad",
+    "keywords": [
+      "Innate"
+    ]
+  },
+  {
+    "id": "KinglyKick",
+    "cost": 4,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Regent",
+    "damage": 27,
+    "upgrade": {
+      "damage": 8
+    }
+  },
+  {
+    "id": "KinglyPunch",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Regent",
+    "damage": 8,
+    "vars": {
+      "Increase": 4
+    },
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "KnifeTrap",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Silent",
+    "tags": [
+      "Shiv"
+    ]
+  },
+  {
+    "id": "Knockdown",
+    "cost": 3,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Colorless",
+    "damage": 10,
+    "powers": {
+      "KnockdownPower": 2
+    },
+    "upgrade": {
+      "damage": 4
+    }
+  },
+  {
+    "id": "KnockoutBlow",
+    "cost": 3,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Regent",
+    "damage": 30,
+    "upgrade": {
+      "damage": 8
+    }
+  },
+  {
+    "id": "KnowThyPlace",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Regent",
+    "powers": {
+      "WeakPower": 1,
+      "VulnerablePower": 1
+    },
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "LanternKey",
+    "cost": -1,
+    "type": "Quest",
+    "rarity": "Quest",
+    "target": "Self",
+    "pool": "Quest",
+    "keywords": [
+      "Unplayable"
+    ]
+  },
+  {
+    "id": "Largesse",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AnyAlly",
+    "pool": "Regent"
+  },
+  {
+    "id": "LeadingStrike",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Silent",
+    "damage": 7,
+    "tags": [
+      "Strike"
+    ],
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "Leap",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Defect",
+    "block": 9,
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "LegionOfBone",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AllAllies",
+    "pool": "Necrobinder",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "LegSweep",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Silent",
+    "block": 11,
+    "powers": {
+      "WeakPower": 2
+    },
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "Lethality",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "powers": {
+      "LethalityPower": 50
+    },
+    "keywords": [
+      "Ethereal"
+    ]
+  },
+  {
+    "id": "Lift",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AnyAlly",
+    "pool": "Colorless",
+    "block": 11,
+    "upgrade": {
+      "block": 5
+    }
+  },
+  {
+    "id": "LightningRod",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Defect",
+    "block": 4,
+    "powers": {
+      "LightningRodPower": 2
+    },
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "Loop",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Defect",
+    "vars": {
+      "Loop": 1
+    }
+  },
+  {
+    "id": "Luminesce",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Token",
+    "target": "Self",
+    "pool": "Token",
+    "keywords": [
+      "Exhaust",
+      "Retain"
+    ]
+  },
+  {
+    "id": "LunarBlast",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Regent",
+    "damage": 4,
+    "upgrade": {
+      "damage": 1
+    }
+  },
+  {
+    "id": "MachineLearning",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Defect",
+    "keywords": [
+      "Innate"
+    ]
+  },
+  {
+    "id": "MadScience",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Event",
+    "target": "AnyEnemy",
+    "pool": "Event",
+    "damage": 12,
+    "block": 8,
+    "vars": {
+      "ViolenceHits": 3,
+      "CuriousReduction": 1
+    },
+    "keywords": [
+      "Innate"
+    ]
+  },
+  {
+    "id": "MakeItSo",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Regent",
+    "damage": 6,
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "Malaise",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Silent",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Mangle",
+    "cost": 3,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "damage": 15,
+    "vars": {
+      "StrengthLoss": 10
+    },
+    "upgrade": {
+      "damage": 5
+    }
+  },
+  {
+    "id": "ManifestAuthority",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Regent",
+    "block": 7,
+    "upgrade": {
+      "block": 1
+    }
+  },
+  {
+    "id": "MasterOfStrategy",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Colorless",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "MasterPlanner",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Silent",
+    "keywords": [
+      "Sly"
+    ],
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Maul",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Ancient",
+    "target": "AnyEnemy",
+    "pool": "Event",
+    "damage": 5,
+    "vars": {
+      "Increase": 1
+    },
+    "upgrade": {
+      "damage": 1
+    }
+  },
+  {
+    "id": "Mayhem",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Colorless",
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Melancholy",
+    "cost": 3,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "block": 13,
+    "upgrade": {
+      "block": 4
+    }
+  },
+  {
+    "id": "MementoMori",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Silent",
+    "upgrade": {
+      "damage": 1
+    }
+  },
+  {
+    "id": "Metamorphosis",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Event",
+    "target": "Self",
+    "pool": "Event",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "MeteorShower",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Ancient",
+    "target": "AllEnemies",
+    "pool": "Regent",
+    "damage": 14,
+    "powers": {
+      "VulnerablePower": 2,
+      "WeakPower": 2
+    },
+    "upgrade": {
+      "damage": 7
+    }
+  },
+  {
+    "id": "MeteorStrike",
+    "cost": 5,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Defect",
+    "damage": 24,
+    "tags": [
+      "Strike"
+    ],
+    "upgrade": {
+      "damage": 6
+    }
+  },
+  {
+    "id": "Mimic",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "AnyAlly",
+    "pool": "Colorless",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "MindBlast",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Colorless",
+    "keywords": [
+      "Innate"
+    ],
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "MindRot",
+    "cost": -1,
+    "type": "Status",
+    "rarity": "Status",
+    "target": "None",
+    "pool": "Token",
+    "powers": {
+      "MindRotPower": 1
+    }
+  },
+  {
+    "id": "MinionDiveBomb",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Token",
+    "target": "AnyEnemy",
+    "pool": "Token",
+    "damage": 13,
+    "keywords": [
+      "Exhaust"
+    ],
+    "tags": [
+      "Minion"
+    ],
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "MinionSacrifice",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Token",
+    "target": "Self",
+    "pool": "Token",
+    "block": 9,
+    "keywords": [
+      "Exhaust"
+    ],
+    "tags": [
+      "Minion"
+    ],
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "MinionStrike",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Token",
+    "target": "AnyEnemy",
+    "pool": "Token",
+    "damage": 6,
+    "keywords": [
+      "Exhaust"
+    ],
+    "tags": [
+      "Minion",
+      "Strike"
+    ],
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "Mirage",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Silent",
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Misery",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "damage": 7,
+    "keywords": [
+      "Retain"
+    ],
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "Modded",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Defect"
+  },
+  {
+    "id": "MoltenFist",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "damage": 10,
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "damage": 4
+    }
+  },
+  {
+    "id": "MomentumStrike",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Defect",
+    "damage": 10,
+    "tags": [
+      "Strike"
+    ],
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "MonarchsGaze",
+    "cost": 3,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Regent",
+    "vars": {
+      "StrengthLoss": 1
+    },
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Monologue",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Regent",
+    "vars": {
+      "Power": 1
+    },
+    "keywords": [
+      "Retain"
+    ]
+  },
+  {
+    "id": "MultiCast",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Defect"
+  },
+  {
+    "id": "Murder",
+    "cost": 3,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Silent",
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "NecroMastery",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Necrobinder"
+  },
+  {
+    "id": "NegativePulse",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "AllEnemies",
+    "pool": "Necrobinder",
+    "block": 5,
+    "powers": {
+      "DoomPower": 7
+    },
+    "upgrade": {
+      "block": 1
+    }
+  },
+  {
+    "id": "NeowsFury",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Ancient",
+    "target": "AnyEnemy",
+    "pool": "Event",
+    "damage": 10,
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "damage": 4
+    }
+  },
+  {
+    "id": "Neurosurge",
+    "cost": 0,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "powers": {
+      "NeurosurgePower": 3
+    }
+  },
+  {
+    "id": "Neutralize",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Basic",
+    "target": "AnyEnemy",
+    "pool": "Silent",
+    "damage": 3,
+    "powers": {
+      "WeakPower": 1
+    },
+    "upgrade": {
+      "damage": 1
+    }
+  },
+  {
+    "id": "NeutronAegis",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Regent",
+    "powers": {
+      "PlatingPower": 8
+    }
+  },
+  {
+    "id": "Nightmare",
+    "cost": 3,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Silent",
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "NoEscape",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "vars": {
+      "DoomThreshold": 10
+    }
+  },
+  {
+    "id": "Normality",
+    "cost": -1,
+    "type": "Curse",
+    "rarity": "Curse",
+    "target": "None",
+    "pool": "Curse",
+    "keywords": [
+      "Unplayable"
+    ]
+  },
+  {
+    "id": "Nostalgia",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Colorless",
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "NoxiousFumes",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Silent",
+    "vars": {
+      "PoisonPerTurn": 2
+    }
+  },
+  {
+    "id": "Null",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Defect",
+    "damage": 10,
+    "powers": {
+      "WeakPower": 2
+    },
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "Oblivion",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "powers": {
+      "DoomPower": 3
+    }
+  },
+  {
+    "id": "Offering",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Ironclad",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Omnislice",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Colorless",
+    "damage": 8,
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "OneTwoPunch",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Ironclad",
+    "vars": {
+      "Attacks": 1
+    }
+  },
+  {
+    "id": "Orbit",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Regent",
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Outbreak",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Silent",
+    "powers": {
+      "OutbreakPower": 11
+    }
+  },
+  {
+    "id": "Outmaneuver",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Event",
+    "target": "Self",
+    "pool": "Event"
+  },
+  {
+    "id": "Overclock",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Defect"
+  },
+  {
+    "id": "PactsEnd",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AllEnemies",
+    "pool": "Ironclad",
+    "damage": 17,
+    "upgrade": {
+      "damage": 6
+    }
+  },
+  {
+    "id": "Pagestorm",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "keywords": [
+      "Ethereal"
+    ],
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "PaleBlueDot",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Regent",
+    "vars": {
+      "CardPlay": 5
+    }
+  },
+  {
+    "id": "Panache",
+    "cost": 0,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Colorless",
+    "vars": {
+      "PanacheDamage": 10
+    }
+  },
+  {
+    "id": "PanicButton",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Colorless",
+    "block": 30,
+    "vars": {
+      "Turns": 2
+    },
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "block": 10
+    }
+  },
+  {
+    "id": "Parry",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Regent",
+    "powers": {
+      "ParryPower": 10
+    }
+  },
+  {
+    "id": "Parse",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "keywords": [
+      "Ethereal"
+    ]
+  },
+  {
+    "id": "ParticleWall",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Regent",
+    "block": 9,
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "Patter",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Regent",
+    "block": 9,
+    "powers": {
+      "VigorPower": 2
+    },
+    "upgrade": {
+      "block": 2
+    }
+  },
+  {
+    "id": "Peck",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Event",
+    "target": "AnyEnemy",
+    "pool": "Event",
+    "damage": 2
+  },
+  {
+    "id": "PerfectedStrike",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "tags": [
+      "Strike"
+    ],
+    "upgrade": {
+      "damage": 1
+    }
+  },
+  {
+    "id": "PhantomBlades",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Silent",
+    "powers": {
+      "PhantomBladesPower": 9
+    },
+    "keywords": [
+      "Retain"
+    ]
+  },
+  {
+    "id": "PhotonCut",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Regent",
+    "damage": 10,
+    "vars": {
+      "PutBack": 1
+    },
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "PiercingWail",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "AllEnemies",
+    "pool": "Silent",
+    "vars": {
+      "StrengthLoss": 6
+    },
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Pillage",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "damage": 6,
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "PillarOfCreation",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Regent",
+    "block": 3,
+    "upgrade": {
+      "block": 1
+    }
+  },
+  {
+    "id": "Pinpoint",
+    "cost": 3,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Silent",
+    "damage": 15,
+    "upgrade": {
+      "damage": 4
+    }
+  },
+  {
+    "id": "PoisonedStab",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Silent",
+    "damage": 6,
+    "powers": {
+      "PoisonPower": 3
+    },
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "Poke",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "tags": [
+      "OstyAttack"
+    ],
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "PommelStrike",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "damage": 9,
+    "tags": [
+      "Strike"
+    ],
+    "upgrade": {
+      "damage": 1
+    }
+  },
+  {
+    "id": "PoorSleep",
+    "cost": -1,
+    "type": "Curse",
+    "rarity": "Curse",
+    "target": "None",
+    "pool": "Curse",
+    "keywords": [
+      "Retain",
+      "Unplayable"
+    ]
+  },
+  {
+    "id": "Pounce",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Silent",
+    "damage": 12,
+    "upgrade": {
+      "damage": 6
+    }
+  },
+  {
+    "id": "PreciseCut",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Silent"
+  },
+  {
+    "id": "Predator",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Silent",
+    "damage": 15,
+    "upgrade": {
+      "damage": 5
+    }
+  },
+  {
+    "id": "Prepared",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Silent"
+  },
+  {
+    "id": "PrepTime",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Colorless",
+    "powers": {
+      "PrepTimePower": 4
+    }
+  },
+  {
+    "id": "PrimalForce",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Ironclad"
+  },
+  {
+    "id": "Production",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Colorless",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Prolong",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Colorless",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Prophesize",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Regent"
+  },
+  {
+    "id": "Protector",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Ancient",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "tags": [
+      "OstyAttack"
+    ],
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Prowess",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Colorless",
+    "powers": {
+      "StrengthPower": 1,
+      "DexterityPower": 1
+    }
+  },
+  {
+    "id": "PullAggro",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "block": 7,
+    "upgrade": {
+      "block": 2
+    }
+  },
+  {
+    "id": "PullFromBelow",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "damage": 5,
+    "keywords": [
+      "Ethereal"
+    ],
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "Purity",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Colorless",
+    "keywords": [
+      "Exhaust",
+      "Retain"
+    ]
+  },
+  {
+    "id": "Putrefy",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "vars": {
+      "Power": 2
+    },
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Pyre",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Ironclad"
+  },
+  {
+    "id": "Quadcast",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Ancient",
+    "target": "Self",
+    "pool": "Defect",
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Quasar",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Regent"
+  },
+  {
+    "id": "Radiate",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AllEnemies",
+    "pool": "Regent",
+    "damage": 3,
+    "upgrade": {
+      "damage": 1
+    }
+  },
+  {
+    "id": "Rage",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Ironclad",
+    "vars": {
+      "Power": 3
+    }
+  },
+  {
+    "id": "Rainbow",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Defect",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Rally",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "AllAllies",
+    "pool": "Colorless",
+    "block": 12,
+    "upgrade": {
+      "block": 5
+    }
+  },
+  {
+    "id": "Rampage",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "damage": 9,
+    "vars": {
+      "Increase": 5
+    }
+  },
+  {
+    "id": "Rattle",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "tags": [
+      "OstyAttack"
+    ],
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "Reanimate",
+    "cost": 3,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Reap",
+    "cost": 3,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "damage": 27,
+    "keywords": [
+      "Retain"
+    ],
+    "upgrade": {
+      "damage": 6
+    }
+  },
+  {
+    "id": "ReaperForm",
+    "cost": 3,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "keywords": [
+      "Retain"
+    ]
+  },
+  {
+    "id": "Reave",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "damage": 9,
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "Reboot",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Defect",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Rebound",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Event",
+    "target": "AnyEnemy",
+    "pool": "Event",
+    "damage": 9,
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "RefineBlade",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Regent"
+  },
+  {
+    "id": "Reflect",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Regent",
+    "block": 17,
+    "upgrade": {
+      "block": 4
+    }
+  },
+  {
+    "id": "Reflex",
+    "cost": 3,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Silent",
+    "keywords": [
+      "Sly"
+    ]
+  },
+  {
+    "id": "Refract",
+    "cost": 3,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Defect",
+    "damage": 9,
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "Regret",
+    "cost": -1,
+    "type": "Curse",
+    "rarity": "Curse",
+    "target": "None",
+    "pool": "Curse",
+    "keywords": [
+      "Unplayable"
+    ]
+  },
+  {
+    "id": "Relax",
+    "cost": 3,
+    "type": "Skill",
+    "rarity": "Ancient",
+    "target": "Self",
+    "pool": "Event",
+    "block": 15,
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "block": 2
+    }
+  },
+  {
+    "id": "Rend",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Colorless",
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "Resonance",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AllEnemies",
+    "pool": "Regent",
+    "powers": {
+      "StrengthPower": 1
+    }
+  },
+  {
+    "id": "Restlessness",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Colorless",
+    "keywords": [
+      "Retain"
+    ]
+  },
+  {
+    "id": "Ricochet",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "RandomEnemy",
+    "pool": "Silent",
+    "damage": 3,
+    "keywords": [
+      "Sly"
+    ]
+  },
+  {
+    "id": "RightHandHand",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "tags": [
+      "OstyAttack"
+    ],
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "RipAndTear",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Event",
+    "target": "RandomEnemy",
+    "pool": "Event",
+    "damage": 7,
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "RocketPunch",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Defect",
+    "damage": 13,
+    "upgrade": {
+      "damage": 1
+    }
+  },
+  {
+    "id": "RollingBoulder",
+    "cost": 3,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Colorless",
+    "powers": {
+      "RollingBoulderPower": 5
+    },
+    "vars": {
+      "IncrementAmount": 5
+    }
+  },
+  {
+    "id": "RoyalGamble",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Regent",
+    "keywords": [
+      "Exhaust",
+      "Retain"
+    ]
+  },
+  {
+    "id": "Royalties",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Regent"
+  },
+  {
+    "id": "Rupture",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Ironclad",
+    "powers": {
+      "StrengthPower": 1
+    }
+  },
+  {
+    "id": "Sacrifice",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "keywords": [
+      "Retain"
+    ],
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Salvo",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Colorless",
+    "damage": 12,
+    "keywords": [
+      "Retain"
+    ],
+    "upgrade": {
+      "damage": 4
+    }
+  },
+  {
+    "id": "Scavenge",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Defect",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Scourge",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "powers": {
+      "DoomPower": 13
+    }
+  },
+  {
+    "id": "Scrape",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Defect",
+    "damage": 7,
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "Scrawl",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Colorless",
+    "keywords": [
+      "Exhaust",
+      "Retain"
+    ]
+  },
+  {
+    "id": "SculptingStrike",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "damage": 9,
+    "keywords": [
+      "Ethereal"
+    ],
+    "tags": [
+      "Strike"
+    ],
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "Seance",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "keywords": [
+      "Ethereal"
+    ],
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "SecondWind",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Ironclad",
+    "block": 5,
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "block": 2
+    }
+  },
+  {
+    "id": "SecretTechnique",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Colorless",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "SecretWeapon",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Colorless",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "SeekerStrike",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Colorless",
+    "damage": 9,
+    "tags": [
+      "Strike"
+    ],
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "SeekingEdge",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Regent"
+  },
+  {
+    "id": "SentryMode",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "powers": {
+      "SentryModePower": 1
+    },
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "SerpentForm",
+    "cost": 3,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Silent",
+    "powers": {
+      "SerpentFormPower": 4
+    }
+  },
+  {
+    "id": "SetupStrike",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "damage": 7,
+    "powers": {
+      "StrengthPower": 2
+    },
+    "tags": [
+      "Strike"
+    ],
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "SevenStars",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AllEnemies",
+    "pool": "Regent",
+    "damage": 7,
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Severance",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "damage": 13,
+    "upgrade": {
+      "damage": 5
+    }
+  },
+  {
+    "id": "Shadowmeld",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Silent",
+    "vars": {
+      "Power": 1
+    },
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "ShadowShield",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Defect",
+    "block": 11,
+    "upgrade": {
+      "block": 4
+    }
+  },
+  {
+    "id": "ShadowStep",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Silent",
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Shame",
+    "cost": -1,
+    "type": "Curse",
+    "rarity": "Curse",
+    "target": "None",
+    "pool": "Curse",
+    "vars": {
+      "Frail": 1
+    },
+    "keywords": [
+      "Unplayable"
+    ]
+  },
+  {
+    "id": "SharedFate",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "vars": {
+      "EnemyStrengthLoss": 2,
+      "PlayerStrengthLoss": 2
+    },
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Shatter",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AllEnemies",
+    "pool": "Defect",
+    "damage": 11,
+    "upgrade": {
+      "damage": 4
+    }
+  },
+  {
+    "id": "ShiningStrike",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Regent",
+    "damage": 8,
+    "keywords": [
+      "Exhaust"
+    ],
+    "tags": [
+      "Strike"
+    ],
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "Shiv",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Token",
+    "target": "AnyEnemy",
+    "pool": "Token",
+    "damage": 4,
+    "keywords": [
+      "Exhaust"
+    ],
+    "tags": [
+      "Shiv"
+    ],
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "Shockwave",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AllEnemies",
+    "pool": "Colorless",
+    "vars": {
+      "Power": 3
+    },
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Shroud",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "block": 2,
+    "upgrade": {
+      "block": 1
+    }
+  },
+  {
+    "id": "ShrugItOff",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Ironclad",
+    "block": 8,
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "SicEm",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "powers": {
+      "SicEmPower": 2
+    },
+    "tags": [
+      "OstyAttack"
+    ],
+    "upgrade": {
+      "damage": 1
+    }
+  },
+  {
+    "id": "SignalBoost",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Defect",
+    "powers": {
+      "SignalBoostPower": 1
+    },
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Skewer",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Silent",
+    "damage": 8,
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "Skim",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Defect"
+  },
+  {
+    "id": "SleightOfFlesh",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "powers": {
+      "SleightOfFleshPower": 9
+    }
+  },
+  {
+    "id": "Slice",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Silent",
+    "damage": 6,
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "Slimed",
+    "cost": 1,
+    "type": "Status",
+    "rarity": "Status",
+    "target": "None",
+    "pool": "Status",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Sloth",
+    "cost": -1,
+    "type": "Status",
+    "rarity": "Status",
+    "target": "None",
+    "pool": "Token",
+    "powers": {
+      "SlothPower": 3
+    }
+  },
+  {
+    "id": "Smokestack",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Defect",
+    "powers": {
+      "SmokestackPower": 5
+    }
+  },
+  {
+    "id": "Snakebite",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Silent",
+    "powers": {
+      "PoisonPower": 7
+    },
+    "keywords": [
+      "Retain"
+    ]
+  },
+  {
+    "id": "Snap",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "keywords": [
+      "Retain"
+    ],
+    "tags": [
+      "OstyAttack"
+    ],
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "Sneaky",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Silent",
+    "powers": {
+      "SneakyPower": 1
+    },
+    "keywords": [
+      "Sly"
+    ]
+  },
+  {
+    "id": "SolarStrike",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Regent",
+    "damage": 9,
+    "tags": [
+      "Strike"
+    ],
+    "upgrade": {
+      "damage": 1
+    }
+  },
+  {
+    "id": "Soot",
+    "cost": -1,
+    "type": "Status",
+    "rarity": "Status",
+    "target": "None",
+    "pool": "Status",
+    "keywords": [
+      "Unplayable"
+    ]
+  },
+  {
+    "id": "Soul",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Token",
+    "target": "Self",
+    "pool": "Token",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "SoulStorm",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "upgrade": {
+      "damage": 1
+    }
+  },
+  {
+    "id": "SovereignBlade",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Token",
+    "target": "AnyEnemy",
+    "pool": "Token",
+    "damage": 10,
+    "keywords": [
+      "Retain"
+    ],
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Sow",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AllEnemies",
+    "pool": "Necrobinder",
+    "damage": 8,
+    "keywords": [
+      "Retain"
+    ],
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "SpectrumShift",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Regent",
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Speedster",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Silent",
+    "powers": {
+      "SpeedsterPower": 2
+    }
+  },
+  {
+    "id": "Spinner",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Defect",
+    "powers": {
+      "SpinnerPower": 1
+    }
+  },
+  {
+    "id": "SpiritOfAsh",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "vars": {
+      "BlockOnExhaust": 4
+    },
+    "keywords": [
+      "Ethereal"
+    ]
+  },
+  {
+    "id": "Spite",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "damage": 5
+  },
+  {
+    "id": "Splash",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Colorless"
+  },
+  {
+    "id": "SpoilsMap",
+    "cost": -1,
+    "type": "Quest",
+    "rarity": "Quest",
+    "target": "Self",
+    "pool": "Quest",
+    "keywords": [
+      "Unplayable"
+    ]
+  },
+  {
+    "id": "SpoilsOfBattle",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Regent"
+  },
+  {
+    "id": "SporeMind",
+    "cost": 1,
+    "type": "Curse",
+    "rarity": "Curse",
+    "target": "None",
+    "pool": "Curse",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Spur",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "keywords": [
+      "Retain"
+    ]
+  },
+  {
+    "id": "Squash",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Event",
+    "target": "AnyEnemy",
+    "pool": "Event",
+    "damage": 10,
+    "powers": {
+      "VulnerablePower": 2
+    },
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "Squeeze",
+    "cost": 3,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "tags": [
+      "OstyAttack"
+    ],
+    "upgrade": {
+      "damage": 1
+    }
+  },
+  {
+    "id": "Stack",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Event",
+    "target": "Self",
+    "pool": "Event"
+  },
+  {
+    "id": "Stampede",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Ironclad",
+    "vars": {
+      "Power": 1
+    },
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Stardust",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "RandomEnemy",
+    "pool": "Regent",
+    "damage": 5,
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "Stoke",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Ironclad"
+  },
+  {
+    "id": "Stomp",
+    "cost": 3,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AllEnemies",
+    "pool": "Ironclad",
+    "damage": 12,
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "StoneArmor",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Ironclad",
+    "powers": {
+      "PlatingPower": 4
+    }
+  },
+  {
+    "id": "Storm",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Defect",
+    "powers": {
+      "StormPower": 1
+    }
+  },
+  {
+    "id": "StormOfSteel",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Silent"
+  },
+  {
+    "id": "Strangle",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Silent",
+    "damage": 8,
+    "powers": {
+      "StranglePower": 2
+    },
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "Stratagem",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Colorless",
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "StrikeDefect",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Basic",
+    "target": "AnyEnemy",
+    "pool": "Defect",
+    "damage": 6,
+    "tags": [
+      "Strike"
+    ],
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "StrikeIronclad",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Basic",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "damage": 6,
+    "tags": [
+      "Strike"
+    ],
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "StrikeNecrobinder",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Basic",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "damage": 6,
+    "tags": [
+      "Strike"
+    ],
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "StrikeRegent",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Basic",
+    "target": "AnyEnemy",
+    "pool": "Regent",
+    "damage": 6,
+    "tags": [
+      "Strike"
+    ],
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "StrikeSilent",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Basic",
+    "target": "AnyEnemy",
+    "pool": "Silent",
+    "damage": 6,
+    "tags": [
+      "Strike"
+    ],
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "Subroutine",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Defect",
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "SuckerPunch",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Silent",
+    "damage": 8,
+    "powers": {
+      "WeakPower": 1
+    },
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "SummonForth",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Regent",
+    "keywords": [
+      "Retain"
+    ]
+  },
+  {
+    "id": "Sunder",
+    "cost": 3,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Defect",
+    "damage": 24,
+    "upgrade": {
+      "damage": 8
+    }
+  },
+  {
+    "id": "Supercritical",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Defect",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Supermassive",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Regent",
+    "upgrade": {
+      "damage": 1
+    }
+  },
+  {
+    "id": "Suppress",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Ancient",
+    "target": "AnyEnemy",
+    "pool": "Silent",
+    "damage": 11,
+    "powers": {
+      "WeakPower": 3
+    },
+    "keywords": [
+      "Innate"
+    ],
+    "upgrade": {
+      "damage": 6
+    }
+  },
+  {
+    "id": "Survivor",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Basic",
+    "target": "Self",
+    "pool": "Silent",
+    "block": 8,
+    "upgrade": {
+      "block": 3
+    }
+  },
+  {
+    "id": "SweepingBeam",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AllEnemies",
+    "pool": "Defect",
+    "damage": 6,
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "SweepingGaze",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Token",
+    "target": "RandomEnemy",
+    "pool": "Token",
+    "keywords": [
+      "Ethereal",
+      "Exhaust"
+    ],
+    "tags": [
+      "OstyAttack"
+    ],
+    "upgrade": {
+      "damage": 5
+    }
+  },
+  {
+    "id": "SwordBoomerang",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "RandomEnemy",
+    "pool": "Ironclad",
+    "damage": 3
+  },
+  {
+    "id": "SwordSage",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Regent",
+    "powers": {
+      "SwordSagePower": 1
+    },
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Synchronize",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Defect",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Synthesis",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Defect",
+    "damage": 12,
+    "upgrade": {
+      "damage": 6
+    }
+  },
+  {
+    "id": "Tactician",
+    "cost": 3,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Silent",
+    "keywords": [
+      "Sly"
+    ]
+  },
+  {
+    "id": "TagTeam",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Colorless",
+    "damage": 11,
+    "upgrade": {
+      "damage": 4
+    }
+  },
+  {
+    "id": "Tank",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Ironclad",
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Taunt",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "block": 7,
+    "powers": {
+      "VulnerablePower": 1
+    },
+    "upgrade": {
+      "block": 1
+    }
+  },
+  {
+    "id": "TearAsunder",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "damage": 5,
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "Tempest",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Defect"
+  },
+  {
+    "id": "Terraforming",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Regent",
+    "powers": {
+      "VigorPower": 6
+    }
+  },
+  {
+    "id": "TeslaCoil",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Defect",
+    "damage": 3,
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "TheBomb",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Colorless",
+    "vars": {
+      "Turns": 3,
+      "BombDamage": 40
+    }
+  },
+  {
+    "id": "TheGambit",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Colorless",
+    "block": 50,
+    "upgrade": {
+      "block": 25
+    }
+  },
+  {
+    "id": "TheHunt",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Silent",
+    "damage": 10,
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "damage": 5
+    }
+  },
+  {
+    "id": "TheScythe",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "TheSealedThrone",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Ancient",
+    "target": "Self",
+    "pool": "Regent",
+    "keywords": [
+      "Innate"
+    ]
+  },
+  {
+    "id": "TheSmith",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Regent"
+  },
+  {
+    "id": "ThinkingAhead",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Colorless",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Thrash",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "damage": 4,
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "ThrummingHatchet",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Colorless",
+    "damage": 11,
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "Thunder",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Defect",
+    "powers": {
+      "ThunderPower": 6
+    }
+  },
+  {
+    "id": "Thunderclap",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AllEnemies",
+    "pool": "Ironclad",
+    "damage": 4,
+    "powers": {
+      "VulnerablePower": 1
+    },
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "TimesUp",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "keywords": [
+      "Exhaust",
+      "Retain"
+    ]
+  },
+  {
+    "id": "ToolsOfTheTrade",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Silent",
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "ToricToughness",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Event",
+    "target": "Self",
+    "pool": "Event",
+    "block": 5,
+    "vars": {
+      "Turns": 2
+    },
+    "upgrade": {
+      "block": 2
+    }
+  },
+  {
+    "id": "Toxic",
+    "cost": 1,
+    "type": "Status",
+    "rarity": "Status",
+    "target": "None",
+    "pool": "Status",
+    "damage": 5,
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "Tracking",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Silent",
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Transfigure",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "TrashToTreasure",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Defect",
+    "keywords": [
+      "Innate"
+    ]
+  },
+  {
+    "id": "Tremble",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "powers": {
+      "VulnerablePower": 3
+    },
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "TrueGrit",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Ironclad",
+    "block": 7,
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "block": 2
+    }
+  },
+  {
+    "id": "Turbo",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Defect"
+  },
+  {
+    "id": "TwinStrike",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "damage": 5,
+    "tags": [
+      "Strike"
+    ],
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "Tyranny",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Regent",
+    "keywords": [
+      "Exhaust",
+      "Innate"
+    ]
+  },
+  {
+    "id": "UltimateDefend",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Colorless",
+    "block": 11,
+    "tags": [
+      "Defend"
+    ],
+    "upgrade": {
+      "block": 4
+    }
+  },
+  {
+    "id": "UltimateStrike",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Colorless",
+    "damage": 14,
+    "tags": [
+      "Strike"
+    ],
+    "upgrade": {
+      "damage": 6
+    }
+  },
+  {
+    "id": "Undeath",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "block": 7,
+    "upgrade": {
+      "block": 2
+    }
+  },
+  {
+    "id": "Unleash",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Basic",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "tags": [
+      "OstyAttack"
+    ]
+  },
+  {
+    "id": "Unmovable",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Ironclad",
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Unrelenting",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "damage": 12,
+    "upgrade": {
+      "damage": 6
+    }
+  },
+  {
+    "id": "Untouchable",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Silent",
+    "block": 7,
+    "keywords": [
+      "Sly"
+    ],
+    "upgrade": {
+      "block": 2
+    }
+  },
+  {
+    "id": "UpMySleeve",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Silent"
+  },
+  {
+    "id": "Uppercut",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Ironclad",
+    "damage": 13,
+    "vars": {
+      "Power": 1
+    }
+  },
+  {
+    "id": "Uproar",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Defect",
+    "damage": 5,
+    "keywords": [
+      "Unplayable"
+    ],
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "Veilpiercer",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "pool": "Necrobinder",
+    "damage": 10,
+    "keywords": [
+      "Ethereal"
+    ],
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "Venerate",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Basic",
+    "target": "Self",
+    "pool": "Regent"
+  },
+  {
+    "id": "Vicious",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Ironclad"
+  },
+  {
+    "id": "Void",
+    "cost": -1,
+    "type": "Status",
+    "rarity": "Status",
+    "target": "None",
+    "pool": "Status",
+    "keywords": [
+      "Ethereal",
+      "Unplayable"
+    ]
+  },
+  {
+    "id": "VoidForm",
+    "cost": 3,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Regent",
+    "powers": {
+      "VoidFormPower": 2
+    },
+    "keywords": [
+      "Ethereal"
+    ]
+  },
+  {
+    "id": "Volley",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "RandomEnemy",
+    "pool": "Colorless",
+    "damage": 10,
+    "upgrade": {
+      "damage": 4
+    }
+  },
+  {
+    "id": "Voltaic",
+    "cost": 3,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "pool": "Defect",
+    "keywords": [
+      "Exhaust"
+    ]
+  },
+  {
+    "id": "WasteAway",
+    "cost": -1,
+    "type": "Status",
+    "rarity": "Status",
+    "target": "None",
+    "pool": "Token",
+    "powers": {
+      "WasteAwayPower": 1
+    }
+  },
+  {
+    "id": "WellLaidPlans",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Silent",
+    "vars": {
+      "RetainAmount": 1
+    },
+    "keywords": [
+      "Retain"
+    ]
+  },
+  {
+    "id": "Whirlwind",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AllEnemies",
+    "pool": "Ironclad",
+    "damage": 5,
+    "upgrade": {
+      "damage": 3
+    }
+  },
+  {
+    "id": "Whistle",
+    "cost": 3,
+    "type": "Attack",
+    "rarity": "Ancient",
+    "target": "AnyEnemy",
+    "pool": "Event",
+    "damage": 33,
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "damage": 11
+    }
+  },
+  {
+    "id": "WhiteNoise",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "pool": "Defect",
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrade": {
+      "cost": -1
+    }
+  },
+  {
+    "id": "Wish",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Ancient",
+    "target": "Self",
+    "pool": "Event",
+    "keywords": [
+      "Exhaust",
+      "Retain"
+    ]
+  },
+  {
+    "id": "Wisp",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "pool": "Necrobinder",
+    "keywords": [
+      "Exhaust",
+      "Retain"
+    ]
+  },
+  {
+    "id": "Wound",
+    "cost": -1,
+    "type": "Status",
+    "rarity": "Status",
+    "target": "None",
+    "pool": "Status",
+    "keywords": [
+      "Unplayable"
+    ]
+  },
+  {
+    "id": "WraithForm",
+    "cost": 3,
+    "type": "Power",
+    "rarity": "Ancient",
+    "target": "Self",
+    "pool": "Silent",
+    "powers": {
+      "IntangiblePower": 2,
+      "WraithFormPower": 1
+    }
+  },
+  {
+    "id": "Writhe",
+    "cost": -1,
+    "type": "Curse",
+    "rarity": "Curse",
+    "target": "None",
+    "pool": "Curse",
+    "keywords": [
+      "Innate",
+      "Unplayable"
+    ]
+  },
+  {
+    "id": "WroughtInWar",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "pool": "Regent",
+    "damage": 7,
+    "upgrade": {
+      "damage": 2
+    }
+  },
+  {
+    "id": "Zap",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Basic",
+    "target": "Self",
+    "pool": "Defect",
+    "upgrade": {
+      "cost": -1
+    }
+  }
+]

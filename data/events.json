@@ -1,0 +1,265 @@
+[
+  {
+    "id": "AbyssalBaths",
+    "vars": {
+      "damage": 3,
+      "heal": 10
+    }
+  },
+  {
+    "id": "Amalgamator"
+  },
+  {
+    "id": "AromaOfChaos"
+  },
+  {
+    "id": "BattlewornDummy"
+  },
+  {
+    "id": "BrainLeech"
+  },
+  {
+    "id": "Bugslayer"
+  },
+  {
+    "id": "ByrdonisNest"
+  },
+  {
+    "id": "ColorfulPhilosophers"
+  },
+  {
+    "id": "ColossalFlower"
+  },
+  {
+    "id": "CrystalSphere"
+  },
+  {
+    "id": "Darv"
+  },
+  {
+    "id": "DenseVegetation",
+    "vars": {
+      "heal": 0,
+      "gold": 0
+    }
+  },
+  {
+    "id": "DollRoom"
+  },
+  {
+    "id": "DoorsOfLightAndDark"
+  },
+  {
+    "id": "DrowningBeacon"
+  },
+  {
+    "id": "EndlessConveyor",
+    "vars": {
+      "gold": 40
+    }
+  },
+  {
+    "id": "FakeMerchant"
+  },
+  {
+    "id": "FieldOfManSizedHoles",
+    "vars": {
+      "gold": 75
+    }
+  },
+  {
+    "id": "GraveOfTheForgotten"
+  },
+  {
+    "id": "HungryForMushrooms"
+  },
+  {
+    "id": "InfestedAutomaton"
+  },
+  {
+    "id": "JungleMazeAdventure"
+  },
+  {
+    "id": "LostWisp",
+    "vars": {
+      "gold": 60
+    }
+  },
+  {
+    "id": "LuminousChoir",
+    "vars": {
+      "gold": 149
+    }
+  },
+  {
+    "id": "MorphicGrove"
+  },
+  {
+    "id": "Neow"
+  },
+  {
+    "id": "Nonupeipe"
+  },
+  {
+    "id": "Orobas"
+  },
+  {
+    "id": "Pael"
+  },
+  {
+    "id": "PotionCourier"
+  },
+  {
+    "id": "PunchOff",
+    "vars": {
+      "gold": 0
+    }
+  },
+  {
+    "id": "RanwidTheElder",
+    "vars": {
+      "gold": 100
+    }
+  },
+  {
+    "id": "Reflections"
+  },
+  {
+    "id": "RelicTrader"
+  },
+  {
+    "id": "RoomFullOfCheese",
+    "vars": {
+      "damage": 14
+    }
+  },
+  {
+    "id": "RoundTeaParty",
+    "vars": {
+      "damage": 11
+    }
+  },
+  {
+    "id": "SapphireSeed",
+    "vars": {
+      "heal": 9
+    }
+  },
+  {
+    "id": "SelfHelpBook"
+  },
+  {
+    "id": "SlipperyBridge"
+  },
+  {
+    "id": "SpiralingWhirlpool",
+    "vars": {
+      "heal": 0
+    }
+  },
+  {
+    "id": "SpiritGrafter"
+  },
+  {
+    "id": "StoneOfAllTime"
+  },
+  {
+    "id": "SunkenStatue",
+    "vars": {
+      "gold": 111
+    }
+  },
+  {
+    "id": "SunkenTreasury"
+  },
+  {
+    "id": "Symbiote"
+  },
+  {
+    "id": "TabletOfTruth"
+  },
+  {
+    "id": "Tanx"
+  },
+  {
+    "id": "TeaMaster"
+  },
+  {
+    "id": "Tezcatara"
+  },
+  {
+    "id": "TheArchitect"
+  },
+  {
+    "id": "TheFutureOfPotions"
+  },
+  {
+    "id": "TheLanternKey",
+    "vars": {
+      "gold": 100
+    }
+  },
+  {
+    "id": "TheLegendsWereTrue",
+    "vars": {
+      "damage": 8
+    }
+  },
+  {
+    "id": "ThisOrThat",
+    "vars": {
+      "gold": 0
+    }
+  },
+  {
+    "id": "TinkerTime",
+    "vars": {
+      "damage": 12
+    }
+  },
+  {
+    "id": "TrashHeap",
+    "vars": {
+      "gold": 100
+    }
+  },
+  {
+    "id": "Trial"
+  },
+  {
+    "id": "UnrestSite",
+    "vars": {
+      "heal": 0
+    }
+  },
+  {
+    "id": "Vakuu"
+  },
+  {
+    "id": "WarHistorianRepy"
+  },
+  {
+    "id": "WaterloggedScriptorium",
+    "vars": {
+      "gold": 65
+    }
+  },
+  {
+    "id": "WelcomeToWongos"
+  },
+  {
+    "id": "Wellspring"
+  },
+  {
+    "id": "WhisperingHollow",
+    "vars": {
+      "gold": 50
+    }
+  },
+  {
+    "id": "WoodCarvings"
+  },
+  {
+    "id": "ZenWeaver"
+  }
+]

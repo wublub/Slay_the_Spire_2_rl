@@ -1,0 +1,254 @@
+[
+  {
+    "id": "Ashwater",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": "AttackPotion",
+    "rarity": "Common"
+  },
+  {
+    "id": "BeetleJuice",
+    "rarity": "Rare"
+  },
+  {
+    "id": "BlessingOfTheForge",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": "BlockPotion",
+    "rarity": "Common"
+  },
+  {
+    "id": "BloodPotion",
+    "rarity": "Common"
+  },
+  {
+    "id": "BoneBrew",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": "BottledPotential",
+    "rarity": "Rare"
+  },
+  {
+    "id": "Clarity",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": "ColorlessPotion",
+    "rarity": "Common"
+  },
+  {
+    "id": "CosmicConcoction",
+    "rarity": "Rare"
+  },
+  {
+    "id": "CunningPotion",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": "CureAll",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": "DexterityPotion",
+    "rarity": "Common"
+  },
+  {
+    "id": "DistilledChaos",
+    "rarity": "Rare"
+  },
+  {
+    "id": "DropletOfPrecognition",
+    "rarity": "Rare"
+  },
+  {
+    "id": "Duplicator",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": "EnergyPotion",
+    "rarity": "Common"
+  },
+  {
+    "id": "EntropicBrew",
+    "rarity": "Rare"
+  },
+  {
+    "id": "EssenceOfDarkness",
+    "rarity": "Rare"
+  },
+  {
+    "id": "ExplosiveAmpoule",
+    "rarity": "Common"
+  },
+  {
+    "id": "FairyInABottle",
+    "rarity": "Rare"
+  },
+  {
+    "id": "FirePotion",
+    "rarity": "Common"
+  },
+  {
+    "id": "FlexPotion",
+    "rarity": "Common"
+  },
+  {
+    "id": "FocusPotion",
+    "rarity": "Common"
+  },
+  {
+    "id": "Fortifier",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": "FoulPotion",
+    "rarity": "Event"
+  },
+  {
+    "id": "FruitJuice",
+    "rarity": "Rare"
+  },
+  {
+    "id": "FyshOil",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": "GamblersBrew",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": "GhostInAJar",
+    "rarity": "Rare"
+  },
+  {
+    "id": "GigantificationPotion",
+    "rarity": "Rare"
+  },
+  {
+    "id": "GlowwaterPotion",
+    "rarity": "Event"
+  },
+  {
+    "id": "HeartOfIron",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": "KingsCourage",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": "LiquidBronze",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": "LiquidMemories",
+    "rarity": "Rare"
+  },
+  {
+    "id": "LuckyTonic",
+    "rarity": "Rare"
+  },
+  {
+    "id": "MazalethsGift",
+    "rarity": "Rare"
+  },
+  {
+    "id": "OrobicAcid",
+    "rarity": "Rare"
+  },
+  {
+    "id": "PoisonPotion",
+    "rarity": "Common"
+  },
+  {
+    "id": "PotionOfBinding",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": "PotionOfCapacity",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": "PotionOfDoom",
+    "rarity": "Common"
+  },
+  {
+    "id": "PotionShapedRock",
+    "rarity": "Token"
+  },
+  {
+    "id": "PotOfGhouls",
+    "rarity": "Rare"
+  },
+  {
+    "id": "PowderedDemise",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": "PowerPotion",
+    "rarity": "Common"
+  },
+  {
+    "id": "RadiantTincture",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": "RegenPotion",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": "ShacklingPotion",
+    "rarity": "Rare"
+  },
+  {
+    "id": "ShipInABottle",
+    "rarity": "Rare"
+  },
+  {
+    "id": "SkillPotion",
+    "rarity": "Common"
+  },
+  {
+    "id": "SneckoOil",
+    "rarity": "Rare"
+  },
+  {
+    "id": "SoldiersStew",
+    "rarity": "Rare"
+  },
+  {
+    "id": "SpeedPotion",
+    "rarity": "Common"
+  },
+  {
+    "id": "StableSerum",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": "StarPotion",
+    "rarity": "Common"
+  },
+  {
+    "id": "StrengthPotion",
+    "rarity": "Common"
+  },
+  {
+    "id": "SwiftPotion",
+    "rarity": "Common"
+  },
+  {
+    "id": "TouchOfInsanity",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": "VulnerablePotion",
+    "rarity": "Common"
+  },
+  {
+    "id": "WeakPotion",
+    "rarity": "Common"
+  }
+]
