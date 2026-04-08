@@ -5,6 +5,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 import numpy as np
 from sts_env.env import StsEnv
+from sts_env.game_state import GameState, RoomType
+import sts_env.rewards as rewards
 
 
 def test_env_reset():
@@ -109,6 +111,68 @@ def test_env_combat_flow():
         print(f"PASS: test_env_combat_flow (result_phase={info['phase']}, hp={info['hp']})")
     else:
         print(f"PASS: test_env_combat_flow (no combat entered, phase={info['phase']})")
+
+
+def test_compute_combat_reward_prefers_avoidable_hp_loss_penalty():
+    gs = GameState(character="Ironclad", seed=1)
+    base_reward = rewards.compute_combat_reward(
+        gs,
+        RoomType.MONSTER,
+        True,
+        hp_before=80,
+        hp_after=70,
+        turns=2,
+        max_hp=80,
+    )
+    avoidable_penalty_reward = rewards.compute_combat_reward(
+        gs,
+        RoomType.MONSTER,
+        True,
+        hp_before=80,
+        hp_after=70,
+        turns=2,
+        max_hp=80,
+        avoidable_hp_loss=10,
+    )
+    assert avoidable_penalty_reward < base_reward
+
+
+def test_compute_combat_reward_drop_after_turn_threshold():
+    gs = GameState(character="Ironclad", seed=2)
+    quick_reward = rewards.compute_combat_reward(
+        gs,
+        RoomType.MONSTER,
+        True,
+        hp_before=80,
+        hp_after=70,
+        turns=3,
+        max_hp=80,
+    )
+    slow_reward = rewards.compute_combat_reward(
+        gs,
+        RoomType.MONSTER,
+        True,
+        hp_before=80,
+        hp_after=70,
+        turns=9,
+        max_hp=80,
+        turn_threshold=6,
+    )
+    assert slow_reward < quick_reward
+
+
+def test_compute_run_score_accumulates_components():
+    progress = 0.55
+    combat_score = 28.0
+    gs = GameState(character="Regent", seed=3)
+    expected_components = progress + combat_score + gs.player.hp
+
+    total_score = rewards.compute_run_score(
+        progress=progress,
+        combat_score=combat_score,
+        remaining_hp=gs.player.hp,
+    )
+    assert total_score == expected_components
 
 
 if __name__ == "__main__":
