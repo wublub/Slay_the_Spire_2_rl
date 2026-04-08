@@ -4,6 +4,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 import numpy as np
+from math import isclose
 from sts_env.env import StsEnv
 from sts_env.game_state import GameState, RoomType
 import sts_env.rewards as rewards
@@ -159,15 +160,15 @@ def test_compute_combat_reward_drop_after_turn_threshold():
 def test_compute_run_score_accumulates_components():
     progress = 0.55
     combat_score = 28.0
-    gs = GameState(character="Regent", seed=3)
-    expected_components = progress + combat_score + gs.player.hp
+    remaining_hp = 72
+    expected_components = progress + combat_score + remaining_hp
 
     total_score = rewards.compute_run_score(
         progress=progress,
         combat_score=combat_score,
-        remaining_hp=gs.player.hp,
+        remaining_hp=remaining_hp,
     )
-    assert total_score == expected_components
+    assert isclose(total_score, expected_components, rel_tol=1e-6)
 
 
 if __name__ == "__main__":
