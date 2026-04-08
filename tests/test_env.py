@@ -139,26 +139,21 @@ def test_compute_combat_reward_prefers_avoidable_hp_loss_penalty():
 
 def test_compute_combat_reward_drop_after_turn_threshold():
     gs = GameState(character="Ironclad", seed=2)
-    quick_reward = rewards.compute_combat_reward(
-        gs,
-        RoomType.MONSTER,
-        True,
-        hp_before=80,
-        hp_after=70,
-        turns=3,
-        max_hp=80,
-    )
-    slow_reward = rewards.compute_combat_reward(
-        gs,
-        RoomType.MONSTER,
-        True,
-        hp_before=80,
-        hp_after=70,
-        turns=9,
-        max_hp=80,
-        turn_threshold=6,
-    )
-    assert slow_reward < quick_reward
+    def combat_score(turns: int, **kwargs) -> float:
+        return rewards.compute_combat_reward(
+            gs,
+            RoomType.MONSTER,
+            True,
+            hp_before=80,
+            hp_after=70,
+            turns=turns,
+            max_hp=80,
+            **kwargs,
+        )
+
+    drop_before = combat_score(3) - combat_score(4)
+    drop_after = combat_score(6, turn_threshold=5) - combat_score(7, turn_threshold=5)
+    assert drop_after > drop_before
 
 
 def test_compute_run_score_accumulates_components():
