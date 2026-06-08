@@ -36,7 +36,13 @@ def load_eval_summary(path: Path) -> dict | None:
 def build_leaderboard(entries: list[dict]) -> list[dict]:
     return sorted(
         entries,
-        key=lambda item: (-item["win_rate"], -item["avg_floor"], -item["avg_hp"], item["character"]),
+        key=lambda item: (
+            -float(item.get("win_rate", 0.0)),
+            -float(item.get("avg_floor", 0.0)),
+            -float(item.get("avg_run_score", 0.0)),
+            -float(item.get("avg_hp", 0.0)),
+            item["character"],
+        ),
     )
 
 

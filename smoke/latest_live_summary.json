@@ -1,0 +1,199 @@
+[
+  {
+    "path": "logs\\runs\\run_Ironclad_20260509_231859.jsonl",
+    "timestamp": "run_Ironclad_20260509_231859",
+    "won": false,
+    "invalid": false,
+    "floor_reached": 8,
+    "num_entries": 85,
+    "num_samples": 81,
+    "phase_counts": {
+      "map": 10,
+      "combat": 59,
+      "card_reward": 2,
+      "shop": 4,
+      "card_select": 6
+    },
+    "skip_reasons": {
+      "normalize_failed": 3,
+      "action_masked_out": 1
+    }
+  },
+  {
+    "path": "logs\\runs\\run_Ironclad_20260509_225442.jsonl",
+    "timestamp": "run_Ironclad_20260509_225442",
+    "won": false,
+    "invalid": false,
+    "floor_reached": 22,
+    "num_entries": 78,
+    "num_samples": 78,
+    "phase_counts": {
+      "combat": 67,
+      "card_reward": 4,
+      "map": 5,
+      "card_select": 2
+    },
+    "skip_reasons": {}
+  },
+  {
+    "path": "logs\\runs\\run_Ironclad_20260509_224757.jsonl",
+    "timestamp": "run_Ironclad_20260509_224757",
+    "won": false,
+    "invalid": false,
+    "floor_reached": 19,
+    "num_entries": 281,
+    "num_samples": 171,
+    "phase_counts": {
+      "map": 27,
+      "combat": 128,
+      "card_reward": 8,
+      "shop": 3,
+      "card_select": 3,
+      "treasure": 2
+    },
+    "skip_reasons": {
+      "normalize_failed": 3,
+      "action_masked_out": 4
+    }
+  },
+  {
+    "path": "logs\\runs\\run_Ironclad_20260509_222507.jsonl",
+    "timestamp": "run_Ironclad_20260509_222507",
+    "won": false,
+    "invalid": false,
+    "floor_reached": 17,
+    "num_entries": 169,
+    "num_samples": 163,
+    "phase_counts": {
+      "map": 23,
+      "combat": 125,
+      "card_reward": 7,
+      "shop": 5,
+      "card_select": 2,
+      "treasure": 1
+    },
+    "skip_reasons": {
+      "normalize_failed": 2,
+      "action_masked_out": 4
+    }
+  },
+  {
+    "path": "logs\\runs\\run_Ironclad_20260509_212913.jsonl",
+    "timestamp": "run_Ironclad_20260509_212913",
+    "won": false,
+    "invalid": false,
+    "floor_reached": 17,
+    "num_entries": 241,
+    "num_samples": 236,
+    "phase_counts": {
+      "map": 23,
+      "combat": 194,
+      "card_reward": 9,
+      "card_select": 5,
+      "treasure": 1,
+      "shop": 4
+    },
+    "skip_reasons": {
+      "normalize_failed": 2,
+      "action_masked_out": 3
+    }
+  },
+  {
+    "path": "logs\\runs\\run_Ironclad_20260509_195928.jsonl",
+    "timestamp": "run_Ironclad_20260509_195928",
+    "won": false,
+    "invalid": false,
+    "floor_reached": 31,
+    "num_entries": 349,
+    "num_samples": 339,
+    "phase_counts": {
+      "combat": 278,
+      "card_reward": 12,
+      "map": 34,
+      "card_select": 5,
+      "treasure": 2,
+      "shop": 8
+    },
+    "skip_reasons": {
+      "normalize_failed": 4,
+      "action_masked_out": 5
+    }
+  },
+  {
+    "path": "logs\\runs\\run_Ironclad_20260509_195800.jsonl",
+    "timestamp": "run_Ironclad_20260509_195800",
+    "won": false,
+    "invalid": false,
+    "floor_reached": 5,
+    "num_entries": 59,
+    "num_samples": 58,
+    "phase_counts": {
+      "card_reward": 4,
+      "map": 6,
+      "combat": 48
+    },
+    "skip_reasons": {
+      "normalize_failed": 1
+    }
+  },
+  {
+    "path": "logs\\runs\\run_Ironclad_20260509_195646.jsonl",
+    "timestamp": "run_Ironclad_20260509_195646",
+    "won": false,
+    "invalid": true,
+    "floor_reached": 17,
+    "num_entries": 1,
+    "num_samples": 0,
+    "phase_counts": {},
+    "skip_reasons": {},
+    "invalid_reason": "too_few_entries"
+  },
+  {
+    "path": "logs\\runs\\run_Ironclad_20260509_195645.jsonl",
+    "timestamp": "run_Ironclad_20260509_195645",
+    "won": false,
+    "invalid": true,
+    "floor_reached": 17,
+    "num_entries": 1,
+    "num_samples": 0,
+    "phase_counts": {},
+    "skip_reasons": {},
+    "invalid_reason": "too_few_entries"
+  },
+  {
+    "path": "logs\\runs\\run_Ironclad_20260509_195644.jsonl",
+    "timestamp": "run_Ironclad_20260509_195644",
+    "won": false,
+    "invalid": true,
+    "floor_reached": 17,
+    "num_entries": 1,
+    "num_samples": 0,
+    "phase_counts": {},
+    "skip_reasons": {},
+    "invalid_reason": "too_few_entries"
+  },
+  {
+    "path": "logs\\runs\\run_Ironclad_20260509_195643.jsonl",
+    "timestamp": "run_Ironclad_20260509_195643",
+    "won": false,
+    "invalid": true,
+    "floor_reached": 17,
+    "num_entries": 1,
+    "num_samples": 0,
+    "phase_counts": {},
+    "skip_reasons": {},
+    "invalid_reason": "too_few_entries"
+  },
+  {
+    "path": "logs\\runs\\run_Ironclad_20260509_195642.jsonl",
+    "timestamp": "run_Ironclad_20260509_195642",
+    "won": false,
+    "invalid": true,
+    "floor_reached": 17,
+    "num_entries": 1,
+    "num_samples": 0,
+    "phase_counts": {},
+    "skip_reasons": {},
+    "invalid_reason": "too_few_entries"
+  }
+]

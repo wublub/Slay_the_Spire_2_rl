@@ -4,9 +4,18 @@ import argparse
 import json
 import subprocess
 import sys
-import tkinter as tk
 from pathlib import Path
-from tkinter import filedialog, messagebox, ttk
+
+try:
+    import tkinter as tk
+    from tkinter import filedialog, messagebox, ttk
+    TK_IMPORT_ERROR: Exception | None = None
+except Exception as exc:  # pragma: no cover - 缺少 tkinter 的机器上才会触发
+    tk = None
+    filedialog = None
+    messagebox = None
+    ttk = None
+    TK_IMPORT_ERROR = exc
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
@@ -25,15 +34,114 @@ BRIDGE_CLIENT_SCRIPT = ROOT / "bridge" / "bridge_client.py"
 POLL_INTERVAL_MS = 1000
 
 
-def load_character_training_summary(character: str, models_dir: str | Path = MODELS_DIR) -> dict | None:
-    summary_path = Path(models_dir) / character / "training_summary.json"
-    if not summary_path.exists():
+def format_game_over_summary(payload: dict | None) -> str:
+    if not isinstance(payload, dict) or not payload:
+        return "-"
+
+    parts: list[str] = []
+    won = payload.get("won")
+    if won is not None:
+        parts.append("胜利" if bool(won) else "失败")
+    if payload.get("score") is not None:
+        parts.append(f"score={payload['score']}")
+
+    badges = payload.get("badges")
+    if isinstance(badges, list):
+        parts.append(f"badges={len(badges)}")
+
+    run_history = payload.get("run_history")
+    if isinstance(run_history, dict):
+        if run_history.get("floor_reached") is not None:
+            parts.append(f"floor={run_history['floor_reached']}")
+        if run_history.get("ascension") is not None:
+            parts.append(f"asc={run_history['ascension']}")
+
+    character_stats = payload.get("character_stats")
+    if isinstance(character_stats, dict):
+        wins = character_stats.get("total_wins")
+        losses = character_stats.get("total_losses")
+        if wins is not None and losses is not None:
+            parts.append(f"W/L={wins}/{losses}")
+
+    return " | ".join(str(part) for part in parts) if parts else "-"
+
+
+def format_training_metrics_summary(metrics: dict | None) -> str:
+    payload = metrics if isinstance(metrics, dict) else {}
+    return (
+        f"win_rate={float(payload.get('win_rate', 0.0)):.2%}, "
+        f"avg_floor={float(payload.get('avg_floor', 0.0)):.1f}, "
+        f"avg_hp={float(payload.get('avg_hp', 0.0)):.1f}, "
+        f"avg_run_score={float(payload.get('avg_run_score', 0.0)):.2f}, "
+        f"avg_combat_score={float(payload.get('avg_combat_score', 0.0)):.2f}"
+    )
+
+
+def load_training_summary(summary_path: str | Path) -> dict | None:
+    path = Path(summary_path)
+    if not path.exists():
         return None
     try:
-        payload = json.loads(summary_path.read_text(encoding="utf-8"))
+        payload = json.loads(path.read_text(encoding="utf-8"))
     except Exception:
         return None
     return payload if isinstance(payload, dict) else None
+
+
+def load_character_training_summary(character: str, models_dir: str | Path = MODELS_DIR) -> dict | None:
+    summary_path = Path(models_dir) / character / "training_summary.json"
+    return load_training_summary(summary_path)
+
+
+def normalize_local_path(path: str | Path | None, *, relative_to: str | Path | None = None) -> Path | None:
+    if path is None:
+        return None
+    candidate = Path(path).expanduser()
+    if candidate.exists():
+        return candidate
+    if relative_to is not None:
+        relative_candidate = Path(relative_to) / candidate
+        if relative_candidate.exists():
+            return relative_candidate
+    root_relative_candidate = ROOT / candidate
+    if root_relative_candidate.exists():
+        return root_relative_candidate
+    return None
+
+
+def find_training_summary_for_model(model_path: str | Path) -> Path | None:
+    candidate = Path(model_path).expanduser()
+    for parent in candidate.parents:
+        summary_path = parent / "training_summary.json"
+        if summary_path.exists():
+            return summary_path
+    return None
+
+
+def load_training_summary_for_model(model_path: str | Path) -> dict | None:
+    summary_path = find_training_summary_for_model(model_path)
+    if summary_path is None:
+        return None
+    return load_training_summary(summary_path)
+
+
+def resolve_preferred_model_for_target(
+    character: str,
+    *,
+    selected_model_path: str | Path | None = None,
+    models_dir: str | Path = MODELS_DIR,
+) -> Path:
+    if selected_model_path is not None:
+        summary_path = find_training_summary_for_model(selected_model_path)
+        summary = load_training_summary(summary_path) if summary_path is not None else None
+        if summary is not None:
+            base_dir = summary_path.parent if summary_path is not None else None
+            for key in ["preferred_model_path", "best_model_path", "final_model_path"]:
+                resolved = normalize_local_path(summary.get(key), relative_to=base_dir)
+                if resolved is not None:
+                    return resolved
+
+    return resolve_model_path(character, models_dir=models_dir)
 
 
 def list_character_model_paths(character: str, models_dir: str | Path = MODELS_DIR) -> list[Path]:
@@ -126,6 +234,8 @@ class BridgeControlPanel:
         self.last_request_var = tk.StringVar(value=self.state.last_request_id or "-")
         self.last_response_var = tk.StringVar(value=self.state.last_response_type or "-")
         self.last_error_var = tk.StringVar(value=self.state.last_error or "-")
+        self.last_reason_var = tk.StringVar(value=self.state.last_reason or "-")
+        self.last_game_over_var = tk.StringVar(value=format_game_over_summary(self.state.last_game_over))
         self.discovered_model_var = tk.StringVar(value="")
         self.discovered_model_summary_var = tk.StringVar(value="-")
         self.discovered_training_summary_var = tk.StringVar(value="-")
@@ -185,6 +295,22 @@ class BridgeControlPanel:
         ttk.Button(frame, text="暂停自动游玩", command=self.pause_bridge).grid(row=1, column=6, padx=(0, 6), pady=(10, 0), sticky="ew")
         ttk.Button(frame, text="继续自动游玩", command=self.resume_bridge).grid(row=1, column=7, pady=(10, 0), sticky="ew")
 
+        self.run_log_var = tk.BooleanVar(value=self.state.run_log_enabled)
+        self.run_log_check = ttk.Checkbutton(
+            frame,
+            text="战斗日志记录（每局一个 JSONL 文件）",
+            variable=self.run_log_var,
+            command=self._toggle_run_log,
+        )
+        self.run_log_check.grid(row=2, column=0, columnspan=4, sticky="w", pady=(10, 0))
+        self.run_log_status_var = tk.StringVar(value=self._run_log_status_text())
+        ttk.Label(frame, textvariable=self.run_log_status_var, foreground="gray").grid(
+            row=2, column=4, columnspan=2, sticky="w", pady=(10, 0),
+        )
+        ttk.Button(frame, text="打开日志目录", command=self._open_run_log_dir).grid(
+            row=2, column=6, columnspan=2, padx=(0, 0), pady=(10, 0), sticky="ew",
+        )
+
         ttk.Label(frame, text="控制状态文件").grid(row=1, column=0, sticky="w", pady=(10, 0))
         state_entry = ttk.Entry(frame, textvariable=self.control_state_path_var, state="readonly")
         state_entry.grid(row=1, column=1, columnspan=5, sticky="ew", padx=(6, 16), pady=(10, 0))
@@ -202,7 +328,9 @@ class BridgeControlPanel:
             ("当前有效模型", self.effective_model_status_var),
             ("最近 request_id", self.last_request_var),
             ("最近响应类型", self.last_response_var),
+            ("最近原因", self.last_reason_var),
             ("最近错误", self.last_error_var),
+            ("最近结算", self.last_game_over_var),
         ]
 
         for idx, (label, variable) in enumerate(rows):
@@ -299,7 +427,9 @@ class BridgeControlPanel:
         path = self._discovered_model_options.get(label)
         self.discovered_model_summary_var.set(str(path) if path is not None else "-")
 
-        summary = load_character_training_summary(character)
+        summary = load_training_summary_for_model(path) if path is not None else None
+        if summary is None:
+            summary = load_character_training_summary(character)
         if summary is None:
             self.discovered_training_summary_var.set("暂无 training_summary.json")
             return
@@ -307,27 +437,39 @@ class BridgeControlPanel:
         post_eval = summary.get("post_eval") or {}
         self.discovered_training_summary_var.set(
             f"preferred={summary.get('preferred_model_path') or '-'} | "
-            f"win_rate={float(post_eval.get('win_rate', 0.0)):.2%}, "
-            f"avg_floor={float(post_eval.get('avg_floor', 0.0)):.1f}, "
-            f"avg_hp={float(post_eval.get('avg_hp', 0.0)):.1f}"
+            f"{format_training_metrics_summary(post_eval)}"
         )
 
     def refresh_discovered_models(self):
         character = self.desired_character_var.get().strip() or CHARACTERS[0]
         options: dict[str, Path] = {}
         labels: list[str] = []
-        for path in list_character_model_paths(character):
+        current_override_text = self.override_model_vars[character].get().strip()
+
+        def _add_option(path: Path):
             label = format_model_option_label(character, path)
-            options[label] = path
-            labels.append(label)
+            suffix = 2
+            while label in options and options[label] != path:
+                label = f"{format_model_option_label(character, path)} ({suffix})"
+                suffix += 1
+            if label not in options:
+                options[label] = path
+                labels.append(label)
+
+        for path in list_character_model_paths(character):
+            _add_option(path)
+
+        if current_override_text:
+            current_override_path = Path(current_override_text).expanduser()
+            if current_override_path.exists():
+                _add_option(current_override_path)
 
         self._discovered_model_options = options
         self.discovered_model_box.configure(values=labels)
         if labels:
-            current_override = self.override_model_vars[character].get().strip()
-            if current_override:
+            if current_override_text:
                 for label, path in options.items():
-                    if str(path) == current_override:
+                    if str(path) == current_override_text:
                         self.discovered_model_var.set(label)
                         break
                 else:
@@ -350,7 +492,13 @@ class BridgeControlPanel:
 
     def apply_preferred_model_for_target(self):
         character = self.desired_character_var.get().strip() or CHARACTERS[0]
-        model_path = resolve_model_path(character)
+        label = self.discovered_model_var.get().strip()
+        selected_path = self._discovered_model_options.get(label)
+        if selected_path is None:
+            current_override = self.override_model_vars[character].get().strip()
+            if current_override:
+                selected_path = Path(current_override).expanduser()
+        model_path = resolve_preferred_model_for_target(character, selected_model_path=selected_path)
         if not model_path.exists():
             messagebox.showerror("模型不存在", f"推荐模型不存在：\n{model_path}")
             return
@@ -370,7 +518,9 @@ class BridgeControlPanel:
         self.effective_model_status_var.set(self._effective_model_path(desired_character))
         self.last_request_var.set(self.state.last_request_id or "-")
         self.last_response_var.set(self.state.last_response_type or "-")
+        self.last_reason_var.set(self.state.last_reason or "-")
         self.last_error_var.set(self.state.last_error or "-")
+        self.last_game_over_var.set(format_game_over_summary(self.state.last_game_over))
         if self.desired_character_var.get() != desired_character:
             self.desired_character_var.set(desired_character)
 
@@ -461,6 +611,27 @@ class BridgeControlPanel:
     def resume_bridge(self):
         self.control_state_store.set_paused(False)
         self._refresh_status_from_store()
+
+    def _toggle_run_log(self):
+        enabled = self.run_log_var.get()
+        self.control_state_store.update(run_log_enabled=enabled)
+        self.run_log_status_var.set(self._run_log_status_text())
+
+    def _run_log_status_text(self) -> str:
+        log_dir = ROOT / "logs" / "runs"
+        count = len(list(log_dir.glob("run_*.jsonl"))) if log_dir.exists() else 0
+        status = "开启" if self.run_log_var.get() else "关闭"
+        return f"[{status}] 已有 {count} 个日志文件" if count else f"[{status}]"
+
+    def _open_run_log_dir(self):
+        log_dir = ROOT / "logs" / "runs"
+        log_dir.mkdir(parents=True, exist_ok=True)
+        if sys.platform == "win32":
+            subprocess.Popen(["explorer", str(log_dir)])
+        elif sys.platform == "darwin":
+            subprocess.Popen(["open", str(log_dir)])
+        else:
+            subprocess.Popen(["xdg-open", str(log_dir)])
 
     def browse_model(self, character: str):
         selected = filedialog.askopenfilename(

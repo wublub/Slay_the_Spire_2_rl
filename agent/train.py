@@ -19,54 +19,54 @@ from agent.model_paths import CHARACTERS
 
 CHARACTER_PRESETS: dict[str, dict[str, int | float]] = {
     "Ironclad": {
-        "total_timesteps": 1_200_000,
-        "n_envs": 8,
-        "learning_rate": 3e-4,
-        "n_steps": 2048,
-        "batch_size": 256,
-        "eval_freq": 10_000,
-        "eval_episodes": 20,
-        "post_eval_episodes": 30,
+        "total_timesteps": 5_000_000,
+        "n_envs": 16,
+        "learning_rate": 1e-4,
+        "n_steps": 4096,
+        "batch_size": 512,
+        "eval_freq": 5_000,
+        "eval_episodes": 50,
+        "post_eval_episodes": 50,
     },
     "Silent": {
-        "total_timesteps": 1_400_000,
-        "n_envs": 8,
-        "learning_rate": 2.5e-4,
-        "n_steps": 2048,
-        "batch_size": 256,
-        "eval_freq": 10_000,
-        "eval_episodes": 20,
-        "post_eval_episodes": 30,
+        "total_timesteps": 6_000_000,
+        "n_envs": 16,
+        "learning_rate": 1e-4,
+        "n_steps": 4096,
+        "batch_size": 512,
+        "eval_freq": 5_000,
+        "eval_episodes": 50,
+        "post_eval_episodes": 50,
     },
     "Defect": {
-        "total_timesteps": 1_400_000,
-        "n_envs": 8,
-        "learning_rate": 2.5e-4,
-        "n_steps": 2048,
-        "batch_size": 256,
-        "eval_freq": 10_000,
-        "eval_episodes": 20,
-        "post_eval_episodes": 30,
+        "total_timesteps": 6_000_000,
+        "n_envs": 16,
+        "learning_rate": 1e-4,
+        "n_steps": 4096,
+        "batch_size": 512,
+        "eval_freq": 5_000,
+        "eval_episodes": 50,
+        "post_eval_episodes": 50,
     },
     "Necrobinder": {
-        "total_timesteps": 1_600_000,
-        "n_envs": 8,
-        "learning_rate": 2e-4,
-        "n_steps": 2048,
-        "batch_size": 256,
-        "eval_freq": 12_000,
-        "eval_episodes": 20,
-        "post_eval_episodes": 30,
+        "total_timesteps": 7_000_000,
+        "n_envs": 16,
+        "learning_rate": 1e-4,
+        "n_steps": 4096,
+        "batch_size": 512,
+        "eval_freq": 5_000,
+        "eval_episodes": 50,
+        "post_eval_episodes": 50,
     },
     "Regent": {
-        "total_timesteps": 1_400_000,
-        "n_envs": 8,
-        "learning_rate": 2.5e-4,
-        "n_steps": 2048,
-        "batch_size": 256,
-        "eval_freq": 10_000,
-        "eval_episodes": 20,
-        "post_eval_episodes": 30,
+        "total_timesteps": 6_000_000,
+        "n_envs": 16,
+        "learning_rate": 1e-4,
+        "n_steps": 4096,
+        "batch_size": 512,
+        "eval_freq": 5_000,
+        "eval_episodes": 50,
+        "post_eval_episodes": 50,
     },
 }
 
@@ -191,12 +191,22 @@ def run_post_training_evaluation(model, cfg: TrainConfig) -> dict[str, float | i
             "win_rate": 0.0,
             "avg_floor": 0.0,
             "avg_hp": 0.0,
+            "avg_combat_score": 0.0,
+            "avg_run_score": 0.0,
+            "avg_turns_per_combat": 0.0,
+            "avg_hp_lost_per_combat": 0.0,
+            "avg_avoidable_hp_lost_per_combat": 0.0,
         }
 
     env = ActionMaskWrapper(StsEnv(character=cfg.character, seed=cfg.seed + 10_000))
     wins = 0
     total_floors = 0
     total_hp = 0
+    total_combat_score = 0.0
+    total_run_score = 0.0
+    total_turns_per_combat = 0.0
+    total_hp_lost_per_combat = 0.0
+    total_avoidable_hp_lost_per_combat = 0.0
 
     for ep in range(episodes):
         obs, info = env.reset(seed=cfg.seed + 10_000 + ep)
@@ -210,6 +220,11 @@ def run_post_training_evaluation(model, cfg: TrainConfig) -> dict[str, float | i
         wins += int(info.get("won", False))
         total_floors += int(info.get("floor", 0))
         total_hp += max(0, int(info.get("hp", 0)))
+        total_combat_score += float(info.get("combat_score_total", 0.0))
+        total_run_score += float(info.get("run_score", 0.0))
+        total_turns_per_combat += float(info.get("avg_turns_per_combat", 0.0))
+        total_hp_lost_per_combat += float(info.get("avg_hp_lost_per_combat", 0.0))
+        total_avoidable_hp_lost_per_combat += float(info.get("avg_avoidable_hp_lost_per_combat", 0.0))
 
     env.close()
     return {
@@ -219,6 +234,11 @@ def run_post_training_evaluation(model, cfg: TrainConfig) -> dict[str, float | i
         "win_rate": wins / episodes,
         "avg_floor": total_floors / episodes,
         "avg_hp": total_hp / episodes,
+        "avg_combat_score": total_combat_score / episodes,
+        "avg_run_score": total_run_score / episodes,
+        "avg_turns_per_combat": total_turns_per_combat / episodes,
+        "avg_hp_lost_per_combat": total_hp_lost_per_combat / episodes,
+        "avg_avoidable_hp_lost_per_combat": total_avoidable_hp_lost_per_combat / episodes,
     }
 
 
@@ -255,6 +275,15 @@ def list_training_checkpoints(character: str, save_dir: str | Path) -> list[Path
     return sorted(checkpoints_dir.glob(pattern), key=_sort_key, reverse=True)
 
 
+def validate_resume_source(resume_source: str | Path) -> tuple[bool, str | None]:
+    """校验续训模型是否兼容当前 observation/action 协议。"""
+    try:
+        load_resume_parameters(resume_source)
+    except Exception as exc:
+        return False, str(exc)
+    return True, None
+
+
 def resolve_resume_source(
     character: str,
     save_dir: str | Path,
@@ -262,30 +291,44 @@ def resolve_resume_source(
     *,
     auto_resume: bool = False,
 ) -> Path | None:
-    """解析续训来源，优先显式路径，其次自动选择最新 checkpoint。"""
+    """解析续训来源，优先显式路径；自动续训时仅返回兼容当前协议的模型。"""
     if resume_from is not None:
         candidate = Path(resume_from).expanduser()
         if not candidate.exists():
             raise FileNotFoundError(f"续训模型不存在: {candidate}")
+        is_compatible, reason = validate_resume_source(candidate)
+        if not is_compatible:
+            raise ValueError(f"指定续训模型不兼容: {candidate}\n{reason}")
         return candidate
 
     if not auto_resume:
         return None
 
-    checkpoints = list_training_checkpoints(character, save_dir)
-    if checkpoints:
-        return checkpoints[0]
-
     _, best_model_path, preferred_model_path = resolve_training_artifact_paths(
         save_dir,
         Path(save_dir) / f"sts2_{character}_final.zip",
     )
+
+    candidates = list_training_checkpoints(character, save_dir)
     if best_model_path is not None:
-        return Path(best_model_path)
+        candidates.append(Path(best_model_path))
 
     final_path = Path(preferred_model_path)
     if final_path.exists():
-        return final_path
+        candidates.append(final_path)
+
+    checked: set[Path] = set()
+    for candidate in candidates:
+        resolved_candidate = candidate.resolve()
+        if resolved_candidate in checked:
+            continue
+        checked.add(resolved_candidate)
+
+        is_compatible, reason = validate_resume_source(candidate)
+        if is_compatible:
+            return candidate
+        print(f"跳过不兼容续训模型: {candidate} ({reason})")
+
     return None
 
 
@@ -294,8 +337,8 @@ def build_policy_kwargs() -> dict:
 
     return {
         "features_extractor_class": StsFeatureExtractor,
-        "features_extractor_kwargs": {"features_dim": 256},
-        "net_arch": dict(pi=[256, 128], vf=[256, 128]),
+        "features_extractor_kwargs": {"features_dim": 512},
+        "net_arch": dict(pi=[512, 256, 128], vf=[512, 256, 128]),
     }
 
 
@@ -319,6 +362,46 @@ def build_model(cfg: TrainConfig, train_env):
         verbose=1,
         tensorboard_log=cfg.log_dir,
         seed=cfg.seed,
+    )
+
+
+def collect_torch_runtime() -> dict[str, object]:
+    try:
+        import torch
+    except Exception as exc:
+        return {
+            "available": False,
+            "error": repr(exc),
+            "version": None,
+            "cuda_version": None,
+            "cuda_available": False,
+            "device_count": 0,
+            "devices": [],
+        }
+
+    cuda_available = bool(torch.cuda.is_available())
+    device_count = int(torch.cuda.device_count()) if cuda_available else 0
+    return {
+        "available": True,
+        "error": None,
+        "version": torch.__version__,
+        "cuda_version": torch.version.cuda,
+        "cuda_available": cuda_available,
+        "device_count": device_count,
+        "devices": [torch.cuda.get_device_name(index) for index in range(device_count)],
+    }
+
+
+def format_torch_runtime(runtime: dict[str, object]) -> str:
+    device_names = runtime.get("devices") or []
+    return (
+        "Torch runtime: "
+        f"version={runtime.get('version') or '-'}, "
+        f"cuda_version={runtime.get('cuda_version') or '-'}, "
+        f"cuda_available={runtime.get('cuda_available')}, "
+        f"device_count={runtime.get('device_count')}, "
+        f"devices={device_names or ['-']}, "
+        f"error={runtime.get('error') or '-'}"
     )
 
 
@@ -350,6 +433,30 @@ def save_training_summary(
     return summary
 
 
+def load_resume_parameters(resume_source: str | Path) -> dict[str, dict[str, object]]:
+    """加载并校验续训模型参数，避免协议升级后静默半加载旧模型。"""
+    from sb3_contrib import MaskablePPO
+
+    from agent.runtime import ensure_model_action_space
+    from sts_env.encoding import get_obs_dim
+
+    loaded_model = MaskablePPO.load(str(resume_source))
+    ensure_model_action_space(loaded_model)
+
+    expected_obs_shape = (get_obs_dim(),)
+    obs_space = getattr(loaded_model, "observation_space", None)
+    actual_obs_shape = getattr(obs_space, "shape", None)
+    if actual_obs_shape is not None:
+        actual_obs_shape = tuple(int(item) for item in actual_obs_shape)
+        if actual_obs_shape != expected_obs_shape:
+            raise ValueError(
+                f"续训模型 observation 维度不兼容，期望 {expected_obs_shape}，实际 {actual_obs_shape}。"
+                " 这通常意味着观测协议已升级，需要重新训练或切换到新模型。"
+            )
+
+    return loaded_model.get_parameters()
+
+
 
 def train(
     cfg: TrainConfig,
@@ -365,78 +472,89 @@ def train(
     os.makedirs(cfg.log_dir, exist_ok=True)
     os.makedirs(cfg.save_dir, exist_ok=True)
 
-    if cfg.n_envs > 1:
-        train_env = SubprocVecEnv([make_env(cfg.character, cfg.seed, i) for i in range(cfg.n_envs)])
-    else:
-        train_env = DummyVecEnv([make_env(cfg.character, cfg.seed, 0)])
+    train_env = None
+    eval_env = None
+    try:
+        if cfg.n_envs > 1:
+            train_env = SubprocVecEnv([make_env(cfg.character, cfg.seed, i) for i in range(cfg.n_envs)])
+        else:
+            train_env = DummyVecEnv([make_env(cfg.character, cfg.seed, 0)])
 
-    eval_env = DummyVecEnv([make_env(cfg.character, cfg.seed + 1000, 0)])
-    eval_freq = callback_trigger_freq(cfg.eval_freq, cfg.n_envs)
-    checkpoint_freq = callback_trigger_freq(max(cfg.eval_freq * 5, 1), cfg.n_envs)
-    model = build_model(cfg, train_env)
-    resume_source = resolve_resume_source(
-        cfg.character,
-        cfg.save_dir,
-        resume_from,
-        auto_resume=auto_resume,
-    )
-    if resume_source is not None:
-        print(f"从已有模型继续训练（保留当前超参数）: {resume_source}")
-        model.set_parameters(str(resume_source), exact_match=False, device="auto")
+        eval_env = DummyVecEnv([make_env(cfg.character, cfg.seed + 1000, 0)])
+        eval_freq = callback_trigger_freq(cfg.eval_freq, cfg.n_envs)
+        checkpoint_freq = callback_trigger_freq(max(cfg.eval_freq * 5, 1), cfg.n_envs)
+        model = build_model(cfg, train_env)
+        print(f"Python executable: {sys.executable}")
+        print(format_torch_runtime(collect_torch_runtime()))
+        print(f"模型设备: {model.device}")
+        print(f"策略设备: {model.policy.device}")
+        resume_source = resolve_resume_source(
+            cfg.character,
+            cfg.save_dir,
+            resume_from,
+            auto_resume=auto_resume,
+        )
+        if resume_source is not None:
+            print(f"从已有模型继续训练（保留当前超参数）: {resume_source}")
+            model.set_parameters(load_resume_parameters(resume_source), exact_match=False, device="auto")
 
-    eval_callback = MaskableEvalCallback(
-        eval_env,
-        best_model_save_path=os.path.join(cfg.save_dir, "best"),
-        log_path=cfg.log_dir,
-        eval_freq=eval_freq,
-        n_eval_episodes=cfg.eval_episodes,
-        deterministic=True,
-    )
-    checkpoint_callback = CheckpointCallback(
-        save_freq=checkpoint_freq,
-        save_path=os.path.join(cfg.save_dir, "checkpoints"),
-        name_prefix=f"sts2_{cfg.character}",
-    )
+        eval_callback = MaskableEvalCallback(
+            eval_env,
+            best_model_save_path=os.path.join(cfg.save_dir, "best"),
+            log_path=cfg.log_dir,
+            eval_freq=eval_freq,
+            n_eval_episodes=cfg.eval_episodes,
+            deterministic=True,
+        )
+        checkpoint_callback = CheckpointCallback(
+            save_freq=checkpoint_freq,
+            save_path=os.path.join(cfg.save_dir, "checkpoints"),
+            name_prefix=f"sts2_{cfg.character}",
+        )
 
-    print(f"开始训练: {cfg.character}, {cfg.total_timesteps} steps, {cfg.n_envs} envs")
-    model.learn(
-        total_timesteps=cfg.total_timesteps,
-        callback=[eval_callback, checkpoint_callback],
-        progress_bar=True,
-    )
+        print(f"开始训练: {cfg.character}, {cfg.total_timesteps} steps, {cfg.n_envs} envs")
+        model.learn(
+            total_timesteps=cfg.total_timesteps,
+            callback=[eval_callback, checkpoint_callback],
+            progress_bar=True,
+        )
 
-    final_path = Path(cfg.save_dir) / f"sts2_{cfg.character}_final"
-    model.save(str(final_path))
-    final_model_path, best_model_path, preferred_model_path = resolve_training_artifact_paths(
-        cfg.save_dir,
-        final_path.with_suffix(".zip"),
-    )
-    print(f"模型已保存: {final_model_path}")
+        final_path = Path(cfg.save_dir) / f"sts2_{cfg.character}_final"
+        model.save(str(final_path))
+        final_model_path, best_model_path, preferred_model_path = resolve_training_artifact_paths(
+            cfg.save_dir,
+            final_path.with_suffix(".zip"),
+        )
+        print(f"模型已保存: {final_model_path}")
 
-    model_for_eval = model
-    if best_model_path is not None and Path(best_model_path) != Path(final_model_path):
-        from sb3_contrib import MaskablePPO
+        model_for_eval = model
+        if best_model_path is not None and Path(best_model_path) != Path(final_model_path):
+            from sb3_contrib import MaskablePPO
 
-        model_for_eval = MaskablePPO.load(best_model_path)
+            model_for_eval = MaskablePPO.load(best_model_path)
 
-    post_eval = run_post_training_evaluation(model_for_eval, cfg)
-    print(
-        f"训练后评估: win_rate={post_eval['win_rate']:.2%}, "
-        f"avg_floor={post_eval['avg_floor']:.1f}, avg_hp={post_eval['avg_hp']:.1f}"
-    )
+        post_eval = run_post_training_evaluation(model_for_eval, cfg)
+        print(
+            f"训练后评估: win_rate={post_eval['win_rate']:.2%}, "
+            f"avg_floor={post_eval['avg_floor']:.1f}, avg_hp={post_eval['avg_hp']:.1f}, "
+            f"avg_combat_score={post_eval['avg_combat_score']:.2f}, "
+            f"avg_run_score={post_eval['avg_run_score']:.2f}"
+        )
 
-    summary = save_training_summary(
-        cfg,
-        final_model_path,
-        post_eval,
-        best_model_path=best_model_path,
-        preferred_model_path=preferred_model_path,
-    )
-    print(f"训练摘要已保存: {summary['summary_path']}")
-
-    train_env.close()
-    eval_env.close()
-    return summary
+        summary = save_training_summary(
+            cfg,
+            final_model_path,
+            post_eval,
+            best_model_path=best_model_path,
+            preferred_model_path=preferred_model_path,
+        )
+        print(f"训练摘要已保存: {summary['summary_path']}")
+        return summary
+    finally:
+        if train_env is not None:
+            train_env.close()
+        if eval_env is not None:
+            eval_env.close()
 
 
 

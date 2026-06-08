@@ -171,6 +171,126 @@ def test_compute_run_score_accumulates_components():
     assert isclose(total_score, expected_components, rel_tol=1e-6)
 
 
+def _make_search_fixture(
+    *,
+    can_prevent_all_damage: bool = False,
+    requires_zero_cost_draw_line: bool = False,
+):
+    if requires_zero_cost_draw_line:
+        return {
+            "actual_hp_loss": 6,
+            "incoming_damage": 6,
+            "energy": 1,
+            "hand_limit": 10,
+            "hand": [
+                {
+                    "label": "play_draw_zero",
+                    "kind": "card",
+                    "cost": 0,
+                    "draw": 1,
+                    "block": 0,
+                    "damage_reduction": 0,
+                    "draws": [
+                        {
+                            "label": "play_block",
+                            "kind": "card",
+                            "cost": 1,
+                            "draw": 0,
+                            "block": 6,
+                            "damage_reduction": 0,
+                        }
+                    ],
+                }
+            ],
+            "draw_pile": [],
+            "potions": [],
+        }
+    if can_prevent_all_damage:
+        return {
+            "actual_hp_loss": 6,
+            "incoming_damage": 6,
+            "energy": 1,
+            "hand_limit": 10,
+            "hand": [
+                {
+                    "label": "play_block",
+                    "kind": "card",
+                    "cost": 1,
+                    "draw": 0,
+                    "block": 6,
+                    "damage_reduction": 0,
+                }
+            ],
+            "draw_pile": [],
+            "potions": [],
+        }
+    return {
+        "actual_hp_loss": 6,
+        "incoming_damage": 6,
+        "energy": 1,
+        "hand_limit": 10,
+        "hand": [
+            {
+                "label": "play_strike",
+                "kind": "card",
+                "cost": 1,
+                "draw": 0,
+                "block": 0,
+                "damage_reduction": 0,
+            }
+        ],
+        "draw_pile": [],
+        "potions": [],
+    }
+
+
+def test_analyze_turn_avoidable_hp_loss_detects_skipped_defensive_line():
+    from sts_env.combat_scoring import analyze_turn_avoidable_hp_loss
+
+    result = analyze_turn_avoidable_hp_loss(_make_search_fixture(can_prevent_all_damage=True))
+
+    assert result.actual_hp_loss == 6
+    assert result.optimal_min_hp_loss == 0
+    assert result.avoidable_hp_loss == 6
+
+
+def test_analyze_turn_avoidable_hp_loss_handles_unavoidable_damage():
+    from sts_env.combat_scoring import analyze_turn_avoidable_hp_loss
+
+    result = analyze_turn_avoidable_hp_loss(_make_search_fixture(can_prevent_all_damage=False))
+
+    assert result.actual_hp_loss == 6
+    assert result.optimal_min_hp_loss == 6
+    assert result.avoidable_hp_loss == 0
+
+
+def test_analyze_turn_avoidable_hp_loss_prefers_draw_then_block_line():
+    from sts_env.combat_scoring import analyze_turn_avoidable_hp_loss
+
+    result = analyze_turn_avoidable_hp_loss(_make_search_fixture(requires_zero_cost_draw_line=True))
+
+    assert result.optimal_min_hp_loss == 0
+    assert "play_draw_zero" in result.best_line_labels
+    assert "play_block" in result.best_line_labels
+
+
+def test_build_terminal_info_exposes_run_score_metrics():
+    env = StsEnv(seed=123)
+    env.reset()
+    env._run_combat_score_total = 10.0
+    env._run_combat_count = 2
+    env._run_hp_lost_total = 4
+    env._run_avoidable_hp_lost_total = 1
+    env._run_turns_total = 5
+
+    terminal_info = env._build_terminal_info(won=True)
+
+    assert terminal_info["combat_score_total"] == 10.0
+    assert terminal_info["run_score"] >= terminal_info["combat_score_total"]
+    assert terminal_info["avg_hp_lost_per_combat"] == 2.0
+    assert terminal_info["avg_avoidable_hp_lost_per_combat"] == 0.5
+
+
 if __name__ == "__main__":
     test_env_reset()
     test_env_action_mask()

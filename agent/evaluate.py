@@ -11,11 +11,23 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from sts_env.env import StsEnv
 from agent.model_paths import CHARACTERS
+from agent.runtime import coerce_observation_for_model
 from agent.train import ActionMaskWrapper
 
 
 
-def _build_metrics(character: str, episodes: int, wins: int, total_floors: int, total_hp: int) -> dict:
+def _build_metrics(
+    character: str,
+    episodes: int,
+    wins: int,
+    total_floors: int,
+    total_hp: int,
+    total_combat_score: float = 0.0,
+    total_run_score: float = 0.0,
+    total_turns_per_combat: float = 0.0,
+    total_hp_lost_per_combat: float = 0.0,
+    total_avoidable_hp_lost_per_combat: float = 0.0,
+) -> dict:
     return {
         "character": character,
         "episodes": episodes,
@@ -23,6 +35,11 @@ def _build_metrics(character: str, episodes: int, wins: int, total_floors: int, 
         "win_rate": wins / episodes if episodes else 0.0,
         "avg_floor": total_floors / episodes if episodes else 0.0,
         "avg_hp": total_hp / episodes if episodes else 0.0,
+        "avg_combat_score": total_combat_score / episodes if episodes else 0.0,
+        "avg_run_score": total_run_score / episodes if episodes else 0.0,
+        "avg_turns_per_combat": total_turns_per_combat / episodes if episodes else 0.0,
+        "avg_hp_lost_per_combat": total_hp_lost_per_combat / episodes if episodes else 0.0,
+        "avg_avoidable_hp_lost_per_combat": total_avoidable_hp_lost_per_combat / episodes if episodes else 0.0,
     }
 
 
@@ -33,6 +50,8 @@ def print_metrics(title: str, metrics: dict):
     print(f"胜率: {metrics['wins']}/{metrics['episodes']} ({metrics['win_rate']*100:.1f}%)")
     print(f"平均楼层: {metrics['avg_floor']:.1f}")
     print(f"平均剩余HP: {metrics['avg_hp']:.1f}")
+    print(f"平均 combat score: {metrics['avg_combat_score']:.2f}")
+    print(f"平均 run score: {metrics['avg_run_score']:.2f}")
 
 
 
@@ -51,13 +70,19 @@ def evaluate(
     wins = 0
     total_floors = 0
     total_hp = 0
+    total_combat_score = 0.0
+    total_run_score = 0.0
+    total_turns_per_combat = 0.0
+    total_hp_lost_per_combat = 0.0
+    total_avoidable_hp_lost_per_combat = 0.0
 
     for ep in range(n_episodes):
         obs, info = env.reset(seed=seed + ep)
         done = False
         while not done:
             action_masks = env.action_masks()
-            action, _ = model.predict(obs, deterministic=True, action_masks=action_masks)
+            model_obs = coerce_observation_for_model(obs, model)
+            action, _ = model.predict(model_obs, deterministic=True, action_masks=action_masks)
             obs, reward, terminated, truncated, info = env.step(int(action))
             done = terminated or truncated
             if render:
@@ -67,9 +92,25 @@ def evaluate(
             wins += 1
         total_floors += info.get("floor", 0)
         total_hp += max(0, info.get("hp", 0))
+        total_combat_score += float(info.get("combat_score_total", 0.0))
+        total_run_score += float(info.get("run_score", 0.0))
+        total_turns_per_combat += float(info.get("avg_turns_per_combat", 0.0))
+        total_hp_lost_per_combat += float(info.get("avg_hp_lost_per_combat", 0.0))
+        total_avoidable_hp_lost_per_combat += float(info.get("avg_avoidable_hp_lost_per_combat", 0.0))
 
     env.close()
-    metrics = _build_metrics(character, n_episodes, wins, total_floors, total_hp)
+    metrics = _build_metrics(
+        character,
+        n_episodes,
+        wins,
+        total_floors,
+        total_hp,
+        total_combat_score,
+        total_run_score,
+        total_turns_per_combat,
+        total_hp_lost_per_combat,
+        total_avoidable_hp_lost_per_combat,
+    )
     print_metrics("评估结果", metrics)
     return metrics
 
@@ -81,6 +122,11 @@ def evaluate_random(character: str, n_episodes: int = 100, seed: int = 42) -> di
     wins = 0
     total_floors = 0
     total_hp = 0
+    total_combat_score = 0.0
+    total_run_score = 0.0
+    total_turns_per_combat = 0.0
+    total_hp_lost_per_combat = 0.0
+    total_avoidable_hp_lost_per_combat = 0.0
 
     for ep in range(n_episodes):
         obs, info = env.reset(seed=seed + ep)
@@ -98,9 +144,25 @@ def evaluate_random(character: str, n_episodes: int = 100, seed: int = 42) -> di
             wins += 1
         total_floors += info.get("floor", 0)
         total_hp += max(0, info.get("hp", 0))
+        total_combat_score += float(info.get("combat_score_total", 0.0))
+        total_run_score += float(info.get("run_score", 0.0))
+        total_turns_per_combat += float(info.get("avg_turns_per_combat", 0.0))
+        total_hp_lost_per_combat += float(info.get("avg_hp_lost_per_combat", 0.0))
+        total_avoidable_hp_lost_per_combat += float(info.get("avg_avoidable_hp_lost_per_combat", 0.0))
 
     env.close()
-    metrics = _build_metrics(character, n_episodes, wins, total_floors, total_hp)
+    metrics = _build_metrics(
+        character,
+        n_episodes,
+        wins,
+        total_floors,
+        total_hp,
+        total_combat_score,
+        total_run_score,
+        total_turns_per_combat,
+        total_hp_lost_per_combat,
+        total_avoidable_hp_lost_per_combat,
+    )
     print_metrics("随机基线", metrics)
     return metrics
 
